@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "symlink .gitconfig"
+echo "symlink .gitconfig_osx"
 rm ~/.gitconfig
 ln -s $(pwd)/.gitconfig_osx ~/.gitconfig
 
