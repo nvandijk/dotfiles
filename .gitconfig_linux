@@ -1,0 +1,19 @@
+[user]
+    name = Niels van Dijk
+    email = nvandijk@leukeleu.nl
+
+[core]
+    excludesfile = /home/nvandijk/.gitignore
+
+[color]
+    ui = true
+
+[init]
+    templatedir = /home/nvandijk/.gittemplate
+
+[alias]
+    lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+    st = status -s
+    cm = commit -am
+    df = diff --color-words
+    co = checkout
