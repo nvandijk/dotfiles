@@ -2,13 +2,6 @@
     "color_scheme": "Packages/User/Monokai Soda.tmTheme",
     "detect_indentation": false,
     "ensure_newline_at_eof_on_save": true,
-    "fold_buttons": false,
-    "folder_exclude_patterns":
-    [
-        ".git",
-        ".svn",
-        ".sass-cache"
-    ],
     "file_exclude_patterns":
     [
         "*.pyc",
@@ -33,6 +26,13 @@
         "*.sublime-project",
         "*.sublime-workspace"
     ],
+    "fold_buttons": false,
+    "folder_exclude_patterns":
+    [
+        ".git",
+        ".svn",
+        ".sass-cache"
+    ],
     "font_face": "DejaVu Sans Mono",
     "font_options":
     [
@@ -45,10 +45,7 @@
     "hot_exit": false,
     "ignored_packages":
     [
-        "Vintage",
-        "JSHint",
-        "SublimeCodeIntel",
-        "Python Pep8 Lint"
+        "Vintage"
     ],
     "line_padding_bottom": 1,
     "line_padding_top": 1,
