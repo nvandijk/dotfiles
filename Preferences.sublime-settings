@@ -9,6 +9,30 @@
         ".svn",
         ".sass-cache"
     ],
+    "file_exclude_patterns":
+    [
+        "*.pyc",
+        "*.pyo",
+        "*.exe",
+        "*.dll",
+        "*.obj",
+        "*.o",
+        "*.a",
+        "*.lib",
+        "*.so",
+        "*.dylib",
+        "*.ncb",
+        "*.sdf",
+        "*.suo",
+        "*.pdb",
+        "*.idb",
+        ".DS_Store",
+        "*.class",
+        "*.psd",
+        "*.db",
+        "*.sublime-project",
+        "*.sublime-workspace"
+    ],
     "font_face": "DejaVu Sans Mono",
     "font_options":
     [
@@ -29,7 +53,7 @@
     "line_padding_bottom": 1,
     "line_padding_top": 1,
     "remember_open_files": false,
-    "theme": "Soda Dark.sublime-theme",
+    "theme": "Soda Light.sublime-theme",
     "translate_tabs_to_spaces": true,
     "trim_trailing_white_space_on_save": true,
     "word_wrap": false
