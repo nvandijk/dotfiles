@@ -2,6 +2,30 @@
     "color_scheme": "Packages/User/Monokai Soda.tmTheme",
     "detect_indentation": false,
     "ensure_newline_at_eof_on_save": true,
+    "file_exclude_patterns":
+    [
+        "*.pyc",
+        "*.pyo",
+        "*.exe",
+        "*.dll",
+        "*.obj",
+        "*.o",
+        "*.a",
+        "*.lib",
+        "*.so",
+        "*.dylib",
+        "*.ncb",
+        "*.sdf",
+        "*.suo",
+        "*.pdb",
+        "*.idb",
+        ".DS_Store",
+        "*.class",
+        "*.psd",
+        "*.db",
+        "*.sublime-project",
+        "*.sublime-workspace"
+    ],
     "fold_buttons": false,
     "folder_exclude_patterns":
     [
@@ -21,15 +45,12 @@
     "hot_exit": false,
     "ignored_packages":
     [
-        "Vintage",
-        "JSHint",
-        "SublimeCodeIntel",
-        "Python Pep8 Lint"
+        "Vintage"
     ],
     "line_padding_bottom": 1,
     "line_padding_top": 1,
     "remember_open_files": false,
-    "theme": "Soda Dark.sublime-theme",
+    "theme": "Soda Light.sublime-theme",
     "translate_tabs_to_spaces": true,
     "trim_trailing_white_space_on_save": true,
     "word_wrap": false
