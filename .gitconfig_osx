@@ -13,7 +13,7 @@
     st = status -s
     cm = commit -am
     db = diff master..origin/master
-    co = checkout
+    ch = checkout
     br = branch
     ph = push
-    pu = pull
+    pl = pull
