@@ -12,5 +12,8 @@
     lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
     st = status -s
     cm = commit -am
-    df = diff master..origin/master
+    db = diff master..origin/master
     co = checkout
+    br = branch
+    ph = push
+    pu = pull
