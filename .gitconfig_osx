@@ -15,5 +15,5 @@
     db = diff master..origin/master
     ch = checkout
     br = branch
-    ph = push
+    ps = push
     pl = pull
