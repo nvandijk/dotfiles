@@ -1,6 +1,6 @@
 [user]
     name = Niels van Dijk
-    email = info@nielsvandijk.nl
+    email = niels@nielsvandijk.nl
 
 [core]
     excludesfile = /Users/nvandijk/.gitignore
