@@ -9,10 +9,10 @@
     ui = true
 
 [alias]
-    lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
-    st = status -s
-    cm = commit -am
-    db = diff master..origin/master
+    l = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+    la = !git lg --all
+    s = status -s
+    c = commit -am
     co = checkout
     br = branch
     ps = push
