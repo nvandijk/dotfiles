@@ -33,7 +33,8 @@
 	[
 		".git",
 		".svn",
-		".sass-cache"
+		".sass-cache",
+        ".webassets-cache"
 	],
 	"font_face": "DejaVu Sans Mono",
 	"font_options":
