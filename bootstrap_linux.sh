@@ -1,13 +1,17 @@
 #!/bin/bash
 
-echo "symlink .bash_prompt"
-rm ~/.bash_prompt
-ln -s $(pwd)/.bash_prompt ~/.bash_prompt
+echo "symlink .dotfiles dir"
+rm -f ~/.dotfiles
+ln -s $(pwd)/ ~/.dotfiles
+
+echo "symlink .bashrc"
+rm ~/.bashrc
+ln -s ~/.dotfiles/.bashrc ~/.bashrc
 
 echo "symlink .gitconfig"
-rm ~/.gitconfig
-ln -s $(pwd)/.gitconfig ~/.gitconfig
+rm -f ~/.gitconfig
+ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
 
 echo "symlink .gitignore"
-rm ~/.gitignore
-ln -s $(pwd)/.gitignore ~/.gitignore
+rm -f ~/.gitignore
+ln -s ~/.dotfiles/.gitignore ~/.gitignore
