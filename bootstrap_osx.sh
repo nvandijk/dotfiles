@@ -1,5 +1,9 @@
 #!/bin/bash
 
+echo "symlink .bash_prompt"
+rm ~/.bash_prompt
+ln -s $(pwd)/.bash_prompt ~/.bash_prompt
+
 echo "symlink .gitconfig_osx"
 rm ~/.gitconfig
 ln -s $(pwd)/.gitconfig_osx ~/.gitconfig
