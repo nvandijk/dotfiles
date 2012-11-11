@@ -8,9 +8,9 @@ echo "symlink .bashrc"
 rm ~/.bashrc
 ln -s ~/.dotfiles/.bashrc ~/.bashrc
 
-echo "symlink .gitconfig_osx"
+echo "symlink .gitconfig"
 rm ~/.gitconfig
-ln -s ~/.dotfiles/.gitconfig_osx ~/.gitconfig
+ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
 
 echo "symlink .gitignore"
 rm ~/.gitignore

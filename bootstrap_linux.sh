@@ -4,9 +4,9 @@ echo "symlink .bash_prompt"
 rm ~/.bash_prompt
 ln -s $(pwd)/.bash_prompt ~/.bash_prompt
 
-echo "symlink .gitconfig_linux"
+echo "symlink .gitconfig"
 rm ~/.gitconfig
-ln -s $(pwd)/.gitconfig_linux ~/.gitconfig
+ln -s $(pwd)/.gitconfig ~/.gitconfig
 
 echo "symlink .gitignore"
 rm ~/.gitignore
