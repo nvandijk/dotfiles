@@ -5,7 +5,7 @@ rm -f ~/.dotfiles
 ln -s $(pwd)/ ~/.dotfiles
 
 echo "symlink .bashrc"
-rm ~/.bashrc
+rm -f ~/.bashrc
 ln -s ~/.dotfiles/.bashrc ~/.bashrc
 
 echo "symlink .gitconfig"
