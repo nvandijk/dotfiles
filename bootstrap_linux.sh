@@ -8,6 +8,6 @@ echo "symlink .gitconfig_linux"
 rm ~/.gitconfig
 ln -s $(pwd)/.gitconfig_linux ~/.gitconfig
 
-echo "symlink .gitignore_linux"
+echo "symlink .gitignore"
 rm ~/.gitignore
-ln -s $(pwd)/.gitignore_linux ~/.gitignore
+ln -s $(pwd)/.gitignore ~/.gitignore

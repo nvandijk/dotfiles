@@ -12,9 +12,9 @@ echo "symlink .gitconfig_osx"
 rm ~/.gitconfig
 ln -s ~/.dotfiles/.gitconfig_osx ~/.gitconfig
 
-echo "symlink .gitignore_osx"
+echo "symlink .gitignore"
 rm ~/.gitignore
-ln -s ~/.dotfiles/.gitignore_osx ~/.gitignore
+ln -s ~/.dotfiles/.gitignore ~/.gitignore
 
 echo "symlink Sublime Text preferences and keymap"
 rm ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/User/Preferences.sublime-settings
