@@ -13,3 +13,6 @@ alias l="ls -l ${colorflag}"
 
 # List all files colorized in long format, including dot files
 alias ll="ls -la ${colorflag}"
+
+# django runserver
+alias rs="python manage.py runserver 0:8000"
