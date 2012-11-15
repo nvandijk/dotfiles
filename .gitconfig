@@ -18,3 +18,4 @@
     br = branch
     ps = push
     pl = pull
+    f = fetch
