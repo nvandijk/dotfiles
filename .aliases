@@ -12,4 +12,4 @@ fi
 alias l="ls -l ${colorflag}"
 
 # List all files colorized in long format, including dot files
-alias la="ls -la ${colorflag}"
+alias ll="ls -la ${colorflag}"
