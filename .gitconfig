@@ -14,11 +14,12 @@
     s = status -s
     c = commit -am
     a = add
+    f = fetch
     co = checkout
+    rb = rebase
     br = branch
     ps = push
     pl = pull
-    f = fetch
 
 [push]
 	default = simple
