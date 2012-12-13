@@ -22,6 +22,8 @@ ln -s ~/.dotfiles/Preferences.sublime-settings ~/Library/Application\ Support/Su
 rm -f ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/User/Default\ \(OSX\).sublime-keymap
 ln -s ~/.dotfiles/Default\ \(OSX\).sublime-keymap ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/User/Default\ \(OSX\).sublime-keymap
 
+echo "symlink Sublime Text command line"
+rm -f /usr/local/bin/subl
 ln -s /Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl /usr/local/bin/subl
 
 echo "setup osx settings"
