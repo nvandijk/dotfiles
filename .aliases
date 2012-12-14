@@ -3,6 +3,17 @@ alias g="git"
 alias w="workon"
 alias s="subl"
 
+alias ..="cd .."
+alias ...="cd ../.."
+alias p="cd ~/Development/projects"
+
+# Show/hide hidden files in Finder
+alias showdesktop="defaults write com.apple.Finder AppleShowAllFiles -bool true && killall Finder"
+alias hidedesktop="defaults write com.apple.Finder AppleShowAllFiles -bool false && killall Finder"
+
+# Enhanced WHOIS lookups
+alias whois="whois -h whois-servers.net"
+
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
     colorflag="--color"
