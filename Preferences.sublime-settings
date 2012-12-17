@@ -1,6 +1,6 @@
 {
 	"auto_match_enabled": false,
-	"color_scheme": "Packages/Theme - Nil/Tubnil.tmTheme",
+	"color_scheme": "Packages/Theme - Nexus/Nexus.tmTheme",
 	"detect_indentation": false,
 	"dictionary": "Packages/Language - English/en_US.dic",
 	"ensure_newline_at_eof_on_save": true,
@@ -54,7 +54,7 @@
 	"line_padding_top": 1,
 	"remember_open_files": false,
 	"scroll_speed": 2,
-	"theme": "Nil.sublime-theme",
+	"theme": "Nexus.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
 	"word_wrap": false
