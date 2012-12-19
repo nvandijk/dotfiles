@@ -2,6 +2,7 @@
 alias g="git"
 alias w="workon"
 alias s="subl"
+alias o="open"
 
 alias ..="cd .."
 alias ...="cd ../.."
