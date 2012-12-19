@@ -1,36 +1,37 @@
-# Shortcuts
+# shortcuts
 alias g="git"
-alias w="workon"
 alias s="subl"
+alias w="workon"
 alias o="open"
 
+# navigation
 alias ..="cd .."
 alias ...="cd ../.."
 alias p="cd ~/Development/projects"
 
-# Show/hide hidden files in Finder
+# show/hide hidden files in Finder
 alias showdesktop="defaults write com.apple.Finder AppleShowAllFiles -bool true && killall Finder"
 alias hidedesktop="defaults write com.apple.Finder AppleShowAllFiles -bool false && killall Finder"
 
-# Enhanced WHOIS lookups
+# enhanced WHOIS lookups
 alias whois="whois -h whois-servers.net"
 
-# IP addresses
+# ip addresses
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias localip="ipconfig getifaddr en1"
 alias ips="ifconfig -a | grep -o 'inet6\? \(\([0-9]\+\.[0-9]\+\.[0-9]\+\.[0-9]\+\)\|[a-fA-F0-9:]\+\)' | sed -e 's/inet6* //'"
 
-# Detect which `ls` flavor is in use
+# detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
     colorflag="--color"
 else # OS X `ls`
     colorflag="-G"
 fi
 
-# List all files colorized in long format
+# list all files colorized in long format
 alias l="ls -l ${colorflag}"
 
-# List all files colorized in long format, including dot files
+# list all files colorized in long format, including dot files
 alias ll="ls -la ${colorflag}"
 
 # django runserver
