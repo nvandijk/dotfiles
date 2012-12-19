@@ -8,6 +8,9 @@ if [ -f $(brew --prefix)/etc/bash_completion ]; then
     . $(brew --prefix)/etc/bash_completion
 fi
 
+# brew tab completion
+source $(brew --prefix)/Library/Contributions/brew_bash_completion.sh
+
 # load .aliases
 source ~/.dotfiles/.aliases
 
