@@ -42,7 +42,7 @@
 		"no_italic",
 		"no_bold"
 	],
-	"font_size": 15.0,
+	"font_size": 17.0,
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
 	"hot_exit": false,
@@ -52,6 +52,15 @@
 	],
 	"line_padding_bottom": 1,
 	"line_padding_top": 1,
+	"pytags_databases":
+	[
+		{
+			"include_project_folders": true,
+			"path": "$HOME/.pytags.db"
+		}
+	],
+	"pytags_index_on_load": true,
+	"pytags_index_on_save": true,
 	"remember_open_files": false,
 	"scroll_speed": 2,
 	"theme": "Nexus.sublime-theme",
