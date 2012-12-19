@@ -1,0 +1,14 @@
+#!/bin/bash
+
+brew update
+brew upgrade
+
+brew install bash
+brew install bash-completion
+brew install git
+brew install python
+brew install ruby
+brew install mysql
+brew install jpeg
+
+brew cleanup

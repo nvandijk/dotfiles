@@ -23,3 +23,6 @@ echo "symlink Sublime Text 2 command line shortcut"
 
 echo "setup os x settings"
 ./.osx
+
+echo "setup brew formula"
+./.brew
