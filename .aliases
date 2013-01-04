@@ -1,8 +1,8 @@
 # shortcuts
 alias g="git"
-alias s="subl"
+alias s="subl ."
+alias o="open ."
 alias w="workon"
-alias o="open"
 
 # navigation
 alias ..="cd .."
