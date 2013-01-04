@@ -2,7 +2,7 @@
 alias g="git"
 alias s="subl ."
 alias o="open ."
-alias w="workon"
+alias st="open -a \"SourceTree\" ."
 
 # navigation
 alias ..="cd .."
