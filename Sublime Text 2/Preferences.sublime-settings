@@ -1,5 +1,4 @@
 {
-    "wide_caret": true,
 	"auto_match_enabled": false,
 	"color_scheme": "Packages/Theme - Nexus/Nexus.tmTheme",
 	"detect_indentation": false,
@@ -58,5 +57,6 @@
 	"theme": "Nexus.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
+	"wide_caret": true,
 	"word_wrap": false
 }
