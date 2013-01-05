@@ -1,8 +1,6 @@
 .DS_Store
-.AppleDouble
 .codeintel
 .sass-cache
-.webassets-cache
 *.pyc
 *.sublime-project
 *.sublime-workspace

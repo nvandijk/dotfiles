@@ -1,4 +1,4 @@
-# shortcuts
+# application shortcuts
 alias g="git"
 alias s="subl ."
 alias o="open ."
