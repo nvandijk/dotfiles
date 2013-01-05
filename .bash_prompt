@@ -107,7 +107,7 @@ function set_git_branch {
     fi
 
     # Set the final branch string.
-    BRANCH="${state}(${branch})${remote}${COLOR_NONE} "
+    BRANCH="${state}[${branch}]${remote}${COLOR_NONE} "
 }
 
 # Determine active Python virtualenv details.
@@ -139,3 +139,6 @@ ${PYTHON_VIRTUALENV}\u@\h ${BLUE}\w${COLOR_NONE} ${BRANCH}
 
 # Tell bash to execute this function just before displaying its prompt.
 PROMPT_COMMAND=set_bash_prompt
+
+# LSCOLORS
+export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
