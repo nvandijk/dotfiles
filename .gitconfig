@@ -15,6 +15,7 @@
     c = commit -am
     a = add
     f = fetch
+    fa = fetch --all
     m = merge
     co = checkout
     rb = rebase
