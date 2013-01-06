@@ -1,0 +1,14 @@
+# application shortcuts
+alias s="subl ."
+alias o="open ."
+alias st="open -a \"SourceTree\" ."
+
+# navigation
+alias p="cd ~/Development/projects"
+
+# show/hide hidden files in Finder
+alias showdesktop="defaults write com.apple.Finder AppleShowAllFiles -bool true && killall Finder"
+alias hidedesktop="defaults write com.apple.Finder AppleShowAllFiles -bool false && killall Finder"
+
+# django runserver
+alias rs="python manage.py runserver 0:8000"

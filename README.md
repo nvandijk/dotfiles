@@ -7,5 +7,5 @@ Clone project into home directory. Run bootstrapper.
     $ git clone git@github.com:nvandijk/dotfiles.git .dotfiles
     $ cd .dotfiles
 
-    $ ./bootstrap.sh
+    $ ./bootstrap_osx.sh
     $ ./bootstrap_linux.sh

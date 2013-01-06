@@ -1,17 +1,9 @@
 # application shortcuts
 alias g="git"
-alias s="subl ."
-alias o="open ."
-alias st="open -a \"SourceTree\" ."
 
 # navigation
 alias ..="cd .."
 alias ...="cd ../.."
-alias p="cd ~/Development/projects"
-
-# show/hide hidden files in Finder
-alias showdesktop="defaults write com.apple.Finder AppleShowAllFiles -bool true && killall Finder"
-alias hidedesktop="defaults write com.apple.Finder AppleShowAllFiles -bool false && killall Finder"
 
 # enhanced WHOIS lookups
 alias whois="whois -h whois-servers.net"
@@ -33,6 +25,3 @@ alias l="ls -l ${colorflag}"
 
 # list all files colorized in long format, including dot files
 alias ll="ls -la ${colorflag}"
-
-# django runserver
-alias rs="python manage.py runserver 0:8000"

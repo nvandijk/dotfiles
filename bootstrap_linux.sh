@@ -1,10 +1,10 @@
 #!/bin/bash
 
-echo "symlink .bash_profile"
-[ ! -f ~/.bash_profile ] && ln -s ~/.dotfiles/.bash_profile ~/.bash_profile
+echo "symlink linux .bash_profile"
+[ ! -f ~/.bash_profile ] && ln -s ~/.dotfiles/linux/.bash_profile ~/.bash_profile
 
 echo "symlink .screenrc"
-[ ! -f ~/.screenrc ] && ln -s ~/.dotfiles/.screenrc ~/.screenrc
+[ ! -f ~/.screenrc ] && ln -s ~/.dotfiles/linux/.screenrc ~/.screenrc
 
 echo "symlink .gitconfig"
 [ ! -f ~/.gitconfig ] && ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
