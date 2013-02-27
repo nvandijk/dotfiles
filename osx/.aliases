@@ -1,5 +1,5 @@
 # application shortcuts
-alias s="subl ."
+alias s="~/.dotfiles/osx/open_sublime.sh"
 alias o="open ."
 alias st="open -a \"SourceTree\" ."
 
