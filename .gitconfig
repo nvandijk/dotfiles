@@ -15,12 +15,12 @@
     c = commit -am
     a = add
     f = fetch --all
+    p = pull --ff-only
     m = merge
-    co = checkout
     rb = rebase
+    co = checkout
     br = branch
     ps = push
-    pl = pull
 
 [push]
     default = simple
