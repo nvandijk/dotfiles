@@ -17,6 +17,7 @@
     f = fetch --all
     p = pull --ff-only
     m = merge
+    d = diff
     rb = rebase
     co = checkout
     br = branch
