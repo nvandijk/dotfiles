@@ -5,6 +5,7 @@ brew upgrade
 
 brew install bash
 brew install bash-completion
+brew install tree
 brew install git
 brew install python
 brew install ruby
