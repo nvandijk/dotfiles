@@ -2,7 +2,7 @@
 alias s="~/.dotfiles/osx/open_sublime.sh"
 alias o="open ."
 alias st="open -a \"SourceTree\" ."
-alias t="tree -C"
+alias t="tree -C -a -I .git"
 
 # navigation
 p() {
