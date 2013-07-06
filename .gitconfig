@@ -19,6 +19,7 @@
     m = merge
     d = diff
     rb = rebase
+    rbc = rebase --continue
     co = checkout
     br = branch
     ps = push
