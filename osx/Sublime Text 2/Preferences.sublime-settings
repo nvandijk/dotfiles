@@ -34,7 +34,8 @@
 		".git",
 		".svn",
 		".sass-cache",
-		".webassets-cache"
+		".webassets-cache",
+		"__pycache__"
 	],
 	"font_face": "DejaVu Sans Mono",
 	"font_options":
