@@ -1,0 +1,22 @@
+{
+	"auto_upgrade_last_run": null,
+	"installed_packages":
+	[
+		"BracketHighlighter",
+		"CoffeeScript",
+		"Djaneiro",
+		"FileDiffs",
+		"Git",
+		"GitGutter",
+		"Markdown Preview",
+		"Marked.app Menu",
+		"Minifier",
+		"Package Control",
+		"requirementstxt",
+		"SCSS",
+		"SideBarEnhancements",
+		"SublimeCodeIntel",
+		"SublimeLinter",
+		"Theme - Aqua"
+	]
+}

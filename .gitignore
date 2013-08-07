@@ -1,10 +1,2 @@
-.DS_Store
-.AppleDouble
-.codeintel
-.sass-cache
-*.pyc
-*.sublime-project
-*.sublime-workspace
-*.egg-info
-*.sql
-*.tar
+osx/Sublime Text/Package Control.last-run
+osx/Sublime Text/Side Bar.sublime-settings
