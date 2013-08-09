@@ -54,7 +54,7 @@
 	"line_padding_bottom": 2,
 	"line_padding_top": 2,
 	"remember_open_files": false,
-	"scroll_speed": 4,
+	"scroll_speed": 8,
 	"theme": "ProKit.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
