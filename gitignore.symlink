@@ -2,6 +2,7 @@
 .AppleDouble
 .codeintel
 .sass-cache
+.coverage
 *.pyc
 *.sublime-project
 *.sublime-workspace
