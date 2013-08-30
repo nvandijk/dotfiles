@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [ -e *.sublime-project ]; then
-    subl *.sublime-project
+    subl -n *.sublime-project
 else
-    subl .
+    subl -n .
 fi
