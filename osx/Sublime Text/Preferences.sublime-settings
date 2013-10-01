@@ -2,7 +2,7 @@
 	"auto_match_enabled": false,
 	"color_scheme": "Packages/Theme - Aqua/Color Schemes/Monokai Aqua.tmTheme",
 	"detect_indentation": false,
-	"dictionary": "Packages/Language - English/en_US.dic",
+	"dictionary": "Packages/Dictionaries/Dutch.dic",
 	"ensure_newline_at_eof_on_save": true,
 	"file_exclude_patterns":
 	[
@@ -55,6 +55,7 @@
 	"line_padding_top": 2,
 	"remember_open_files": false,
 	"scroll_speed": 8,
+	"show_full_path": true,
 	"theme": "ProKit.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,

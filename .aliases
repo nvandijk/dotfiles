@@ -25,3 +25,6 @@ alias l="ls -l ${colorflag}"
 
 # list all files colorized in long format, including dot files
 alias ll="ls -la ${colorflag}"
+
+# clean all .pyc files in current path
+alias cleanpyc="find . -type f -name \"*.pyc\" -delete;"
