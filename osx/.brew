@@ -13,5 +13,6 @@ brew install mysql
 brew install postgresql
 brew install jpeg
 brew install ssh-copy-id
+brew install zsh
 
 brew cleanup

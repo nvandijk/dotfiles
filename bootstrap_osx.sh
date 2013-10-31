@@ -1,5 +1,14 @@
 #!/bin/bash
 
+echo "setup os x settings"
+./osx/.osx
+
+echo "setup brew formula"
+./osx/.brew
+
+echo "set default shell to zsh"
+chsh -s /bin/zsh
+
 echo "symlink osx .bash_profile"
 [ ! -f ~/.bash_profile ] && ln -s ~/.dotfiles/osx/.bash_profile ~/.bash_profile
 
@@ -15,9 +24,3 @@ ln -s ~/.dotfiles/osx/Sublime\ Text/ ~/Library/Application\ Support/Sublime\ Tex
 
 echo "symlink Sublime Text command line shortcut"
 [ ! -f /usr/local/bin/subl ] && ln -s /Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl /usr/local/bin/subl
-
-echo "setup os x settings"
-./osx/.osx
-
-echo "setup brew formula"
-./osx/.brew
