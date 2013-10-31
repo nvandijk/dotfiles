@@ -2,7 +2,7 @@
 	"auto_match_enabled": false,
 	"color_scheme": "Packages/Theme - Aqua/Color Schemes/Monokai Aqua.tmTheme",
 	"detect_indentation": false,
-	"dictionary": "Packages/Dictionaries/Dutch.dic",
+	"dictionary": "Packages/Language - English/en_US.dic",
 	"ensure_newline_at_eof_on_save": true,
 	"file_exclude_patterns":
 	[
