@@ -1,22 +1,22 @@
 #!/bin/bash
 
 echo "setup os x settings"
-./osx/.osx
+./osx/osx
 
 echo "setup brew formula"
-./osx/.brew
+./osx/brew
 
 echo "set default shell to zsh"
-chsh -s /bin/zsh
+chsh -s /usr/local/bin/zsh
 
-echo "symlink osx .bash_profile"
-[ ! -f ~/.bash_profile ] && ln -s ~/.dotfiles/osx/.bash_profile ~/.bash_profile
+echo "symlink .zshrc"
+[ ! -f ~/.zshrc ] && ln -s ~/.dotfiles/osx/zshrc.symlink ~/.zshrc
 
 echo "symlink .gitconfig"
-[ ! -f ~/.gitconfig ] && ln -s ~/.dotfiles/gitconfig.symlink ~/.gitconfig
+[ ! -f ~/.gitconfig ] && ln -s ~/.dotfiles/common/gitconfig.symlink ~/.gitconfig
 
 echo "symlink .gitignore"
-[ ! -f ~/.gitignore ] && ln -s ~/.dotfiles/gitignore.symlink ~/.gitignore
+[ ! -f ~/.gitignore ] && ln -s ~/.dotfiles/common/gitignore.symlink ~/.gitignore
 
 echo "symlink Sublime Text User dir"
 rm -r ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/User

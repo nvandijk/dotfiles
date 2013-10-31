@@ -3,16 +3,16 @@
 brew update
 brew upgrade
 
-brew install bash
-brew install bash-completion
+brew install zsh
 brew install tree
 brew install git
+brew install mercurial
 brew install python
+brew install python3
 brew install ruby
 brew install mysql
 brew install postgresql
 brew install jpeg
 brew install ssh-copy-id
-brew install zsh
 
 brew cleanup

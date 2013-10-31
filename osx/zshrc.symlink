@@ -1,0 +1,11 @@
+# load dotfiles root .zshrc
+source ~/.dotfiles/common/zshrc
+
+# load aliases
+source ~/.dotfiles/osx/aliases
+
+# virtualenvwrapper
+export WORKON_HOME=$HOME/Development/Virtualenvs
+export PROJECT_HOME=$HOME/Development/Projects
+export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python
+source virtualenvwrapper.sh
