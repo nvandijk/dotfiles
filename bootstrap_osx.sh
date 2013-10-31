@@ -15,6 +15,9 @@ echo "symlink .zshrc"
 echo "symlink .gitconfig"
 [ ! -f ~/.gitconfig ] && ln -s ~/.dotfiles/common/gitconfig.symlink ~/.gitconfig
 
+echo "symlink .hgrc"
+[ ! -f ~/.hgrc ] && ln -s ~/.dotfiles/common/hgrc.symlink ~/.hgrc
+
 echo "symlink .gitignore"
 [ ! -f ~/.gitignore ] && ln -s ~/.dotfiles/common/gitignore.symlink ~/.gitignore
 

@@ -1,0 +1,10 @@
+[ui]
+username = Niels van Dijk <niels@nielsvandijk.nl>
+style = compact
+
+[extensions]
+graphlog =
+pager =
+
+[pager]
+pager = LESS='FRX' less
