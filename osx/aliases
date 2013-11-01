@@ -10,9 +10,3 @@ alias hidedesktop="defaults write com.apple.Finder AppleShowAllFiles -bool false
 
 # flush dns cache
 alias flushdns="dscacheutil -flushcache"
-
-# django runserver
-alias rs="python manage.py runserver 0:8000"
-
-# django shell
-alias ds="python manage.py shell"
