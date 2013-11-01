@@ -44,7 +44,5 @@ plugins=(brew django osx pip)
 
 source $ZSH/oh-my-zsh.sh
 
-# Customize to your needs...
-
-# load dotfiles aliases
+# load common aliases
 source ~/.dotfiles/common/aliases

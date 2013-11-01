@@ -1,9 +1,3 @@
-# load root .zshrc
-source ~/.dotfiles/common/zshrc
-
-# load osx aliases
-source ~/.dotfiles/osx/aliases
-
 # virtualenvwrapper
 export WORKON_HOME=$HOME/Development/Virtualenvs
 export PROJECT_HOME=$HOME/Development/Projects
