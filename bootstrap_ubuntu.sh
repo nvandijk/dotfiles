@@ -14,3 +14,10 @@ echo "symlink .gitignore"
 
 echo "symlink .hgrc"
 [ ! -f ~/.hgrc ] && ln -s ~/.dotfiles/common/hgrc.symlink ~/.hgrc
+
+echo "symlink Sublime Text User dir"
+rm -r ~/.config/sublime-text-2/Packages/User
+ln -s ~/.dotfiles/common/Sublime\ Text/ ~/.config/sublime-text-2/Packages/User
+
+echo "symlink Sublime Text command line shortcut"
+[ ! -f /usr/local/bin/subl ] && sudo ln -s /opt/Sublime\ Text\ 2/sublime_text /usr/local/bin/subl
