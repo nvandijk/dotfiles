@@ -1,4 +1,5 @@
 # application shortcuts
+alias s="~/.dotfiles/common/open_sublime.sh"
 alias g="git"
 
 # enhanced WHOIS lookups
