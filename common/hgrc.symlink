@@ -5,6 +5,10 @@ style = compact
 [extensions]
 graphlog =
 pager =
+color =
+
+[extensions]
+hgshelve=~/.hgext/hgshelve/hgshelve.py
 
 [pager]
 pager = LESS='FRX' less
