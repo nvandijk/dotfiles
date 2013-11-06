@@ -11,10 +11,10 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 # General UI/UX
 
 # Set computer name (as done via System Preferences → Sharing)
-sudo scutil --set ComputerName "krypton"
-sudo scutil --set HostName "krypton"
-sudo scutil --set LocalHostName "krypton"
-sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "krypton"
+sudo scutil --set ComputerName "mara"
+sudo scutil --set HostName "mara"
+sudo scutil --set LocalHostName "mara"
+sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "mara"
 
 # Increase window resize speed for Cocoa applications
 defaults write NSGlobalDomain NSWindowResizeTime -float 0.001
