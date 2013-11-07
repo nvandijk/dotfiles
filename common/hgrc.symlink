@@ -8,7 +8,8 @@ pager =
 color =
 
 [extensions]
-hgshelve=~/.hgext/hgshelve/hgshelve.py
+mercurial_keyring = ~/.hgext/mercurial_keyring/mercurial_keyring.py
+hgshelve = ~/.hgext/hgshelve/hgshelve.py
 
 [pager]
 pager = LESS='FRX' less

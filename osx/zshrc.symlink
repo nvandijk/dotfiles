@@ -4,6 +4,9 @@ source ~/.dotfiles/common/zshrc
 # load osx aliases
 source ~/.dotfiles/osx/aliases
 
+# Mercurial use brew python site-packages
+export PYTHONPATH=/usr/local/lib/python2.7/site-packages:$PYTHONPATH
+
 # virtualenvwrapper
 export WORKON_HOME=$HOME/Development/Virtualenvs
 export PROJECT_HOME=$HOME/Development/Projects
