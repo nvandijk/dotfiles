@@ -15,6 +15,9 @@ echo "symlink .gitignore"
 echo "symlink .hgrc"
 [ ! -f ~/.hgrc ] && ln -s ~/.dotfiles/common/hgrc.symlink ~/.hgrc
 
+echo "symlink .hgignore"
+[ ! -f ~/.hgignore ] && ln -s ~/.dotfiles/common/hgignore.symlink ~/.hgignore
+
 echo "symlink Sublime Text User dir"
 rm -r ~/.config/sublime-text-2/Packages/User
 ln -s ~/.dotfiles/common/Sublime\ Text/ ~/.config/sublime-text-2/Packages/User
