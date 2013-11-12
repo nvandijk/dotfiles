@@ -11,6 +11,7 @@ color =
 [extensions]
 mercurial_keyring = ~/.hgext/mercurial_keyring/mercurial_keyring.py
 hgshelve = ~/.hgext/hgshelve/hgshelve.py
+hgflow = ~/.hgext/hgflow/src/hgflow/hgflow.py
 
 [pager]
 pager = LESS='FRX' less
