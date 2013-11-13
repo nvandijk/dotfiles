@@ -9,7 +9,6 @@
 		"Djaneiro",
 		"FileDiffs",
 		"Git",
-		"GitGutter",
 		"Markdown Preview",
 		"Marked.app Menu",
 		"Minifier",
@@ -20,6 +19,7 @@
 		"SideBarEnhancements",
 		"SublimeCodeIntel",
 		"SublimeLinter",
-		"Theme - Aqua"
+		"Theme - Aqua",
+		"VCS Gutter"
 	]
 }
