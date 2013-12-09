@@ -16,6 +16,18 @@ hgflow = ~/.hgext/hgflow/src/hgflow.py
 prompt = ~/.hgext/hg-prompt/prompt.py
 
 [pager]
-pager = LESS='FRX' less
+pager = LESS='FSRX' less
+attend = cat, diff, glog, log, incoming, outgoing, lg, show, l
+
+[alias]
+l = glog --style=/Users/nvandijk/.dotfiles/common/hg-prettylog.lg
+s = status
+c = commit -m
+m = merge
+ps = push
+p = pull
+f = pull
+u = update
+uc = update -C
 
 %include ~/.hgcredentials
