@@ -14,6 +14,7 @@ mercurial_keyring = ~/.hgext/mercurial_keyring/mercurial_keyring.py
 hgshelve = ~/.hgext/hgshelve/hgshelve.py
 hgflow = ~/.hgext/hgflow/src/hgflow.py
 prompt = ~/.hgext/hg-prompt/prompt.py
+activity = ~/.hgext/hgactivity/activity
 
 [pager]
 pager = LESS='FSRX' less
