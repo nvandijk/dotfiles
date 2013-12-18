@@ -13,6 +13,9 @@ alias ips="ifconfig -a | grep -o 'inet6\? \(\([0-9]\+\.[0-9]\+\.[0-9]\+\.[0-9]\+
 # clean all .pyc files in current path
 alias cleanpyc="find . -type f -name \"*.pyc\" -delete;"
 
+# clean all .orig files in current path
+alias cleanorig="find . -type f -name \"*.orig\" -delete;"
+
 # django runserver
 alias rs="python manage.py runserver 127.0.0.1:8000"
 
