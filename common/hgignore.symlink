@@ -11,3 +11,4 @@ syntax: glob
 *.sql
 *.tar
 *.tox
+htmlcov/
