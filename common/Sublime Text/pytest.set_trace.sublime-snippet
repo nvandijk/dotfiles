@@ -1,0 +1,7 @@
+<snippet>
+	<content><![CDATA[
+pytest.set_trace()
+]]></content>
+	<tabTrigger>st</tabTrigger>
+	<scope>source.python</scope>
+</snippet>
