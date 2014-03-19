@@ -12,3 +12,4 @@ syntax: glob
 *.tar
 *.tox
 htmlcov/
+.vagrant
