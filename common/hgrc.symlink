@@ -1,6 +1,6 @@
 [ui]
 username = Niels van Dijk <niels@nielsvandijk.nl>
-ignore = ~/.hgignore
+ignore = ~/.hgignore_global
 style = compact
 
 [extensions]
