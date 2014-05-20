@@ -16,6 +16,9 @@ alias cleanpyc="find . -type f -name \"*.pyc\" -delete;"
 # clean all .orig files in current path
 alias cleanorig="find . -type f -name \"*.orig\" -delete;"
 
+# clean all .rej files in current path
+alias cleanrej="find . -type f -name \"*.rej\" -delete;"
+
 # django runserver
 alias rs="python manage.py runserver 127.0.0.1:8000"
 

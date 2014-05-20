@@ -9,19 +9,19 @@
 		"Djaneiro",
 		"FileDiffs",
 		"Git",
-		"Markdown Preview",
-		"Marked.app Menu",
 		"Minifier",
 		"Package Control",
 		"Puppet",
 		"Puppet Syntax checking",
+		"Quick Look",
 		"requirementstxt",
-		"Sass",
 		"SCSS",
 		"SideBarEnhancements",
 		"SublimeCodeIntel",
 		"SublimeLinter",
 		"Theme - Aqua",
+		"Theme - Nexus",
+		"Theme - Nil",
 		"VCS Gutter"
 	]
 }
