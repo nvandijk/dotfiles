@@ -1,6 +1,6 @@
 # My dotfiles
 
-## Clone project in home directory.
+## Clone project in your home directory.
 
     $ git clone git://github.com/nvandijk/dotfiles.git ~/.dotfiles
 
@@ -16,9 +16,7 @@ https://github.com/robbyrussell/oh-my-zsh
 
     $ git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
 
-## Run bootstrapper for your system
+## Run bootstrapper
 
     $ cd ~/.dotfiles
-    $ ./bootstrap_osx.sh
-    $ ./bootstrap_ubuntu.sh
-    $ ./bootstrap_linux.sh
+    $ ./bootstrap.sh
