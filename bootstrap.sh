@@ -24,6 +24,9 @@ echo "symlink .hgrc"
 echo "symlink .hgignore_global"
 [ ! -f ~/.hgignore_global ] && ln -s ~/.dotfiles/hgignore.symlink ~/.hgignore_global
 
+echo "symlink opendiff-w"
+[ ! -f /usr/local/bin/opendiff-w ] && ln -s ~/.dotfiles/opendiff-w /usr/local/bin/opendiff-w
+
 echo "symlink Sublime Text User dir"
 rm -r ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/User
 ln -s ~/.dotfiles/Sublime\ Text/ ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/User

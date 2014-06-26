@@ -3,6 +3,10 @@ username = Niels van Dijk <niels@nielsvandijk.nl>
 ignore = ~/.hgignore_global
 style = compact
 
+[merge-tools]
+filemerge.executable = opendiff-w
+filemerge.args = $local $other -ancestor $base -merge $output
+
 [extensions]
 graphlog =
 pager =
