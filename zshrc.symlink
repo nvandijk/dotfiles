@@ -66,10 +66,6 @@ source virtualenvwrapper.sh
 
 ### Aliases ###
 
-# application shortcuts
-alias s="~/.dotfiles/open_sublime.sh"
-alias g="git"
-
 # enhanced WHOIS lookups
 alias whois="whois -h whois-servers.net"
 
@@ -88,12 +84,29 @@ alias cleanorig="find . -type f -name \"*.orig\" -delete;"
 alias cleanrej="find . -type f -name \"*.rej\" -delete;"
 
 # django runserver
-alias rs="python manage.py runserver 127.0.0.1:8000"
+function rs() {
+    if [ -z "$1" ]; then
+        python manage.py runserver 127.0.0.1:8000
+    else
+        python manage.py runserver 127.0.0.1:"$1"
+    fi
+}
 
 # django shell
 alias ds="python manage.py shell"
 
 # application shortcuts
+
+# open dir in sublime text, open ST project if it exists
+function s() {
+    if [[ -e *.sublime-project ]]; then
+        subl -n *.sublime-project
+    else
+        subl -n .
+    fi
+}
+
+alias g="git"
 alias o="open ."
 alias st="open -a \"SourceTree\" ."
 alias t="tree -C -a -I .git"
