@@ -97,14 +97,9 @@ alias ds="python manage.py shell"
 
 # application shortcuts
 
-# open dir in sublime text, open ST project if it exists
-function s() {
-    if [[ -e *.sublime-project ]]; then
-        subl -n *.sublime-project
-    else
-        subl -n .
-    fi
-}
+# open dir or ST project in ST
+alias sp="subl -n *.sublime-project"
+alias s="subl -n ."
 
 alias g="git"
 alias o="open ."
