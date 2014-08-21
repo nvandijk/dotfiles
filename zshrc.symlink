@@ -95,16 +95,16 @@ function rs() {
 # django shell
 alias ds="python manage.py shell"
 
-# application shortcuts
-
 # open dir or ST project in ST
 alias sp="subl -n *.sublime-project"
 alias s="subl -n ."
 
+# application shortcuts
 alias g="git"
 alias o="open ."
 alias st="open -a \"SourceTree\" ."
 alias t="tree -C -a -I .git"
+alias p="python"
 
 # show/hide hidden files in Finder
 alias showdesktop="defaults write com.apple.Finder AppleShowAllFiles -bool true && killall Finder"
