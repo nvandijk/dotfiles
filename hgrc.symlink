@@ -29,6 +29,8 @@ l = glog --style=/Users/nvandijk/.dotfiles/hg-prettylog.lg
 s = status
 c = commit -m
 m = merge
+rb = rebase
+rbt = rebase -d tip
 ps = push
 p = pull
 f = pull
