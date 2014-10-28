@@ -8,7 +8,7 @@
 
 Install Xcode with command-line tools and Homebrew (http://brew.sh)
 
-    $ ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"
+    $ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 ## Install oh-my-zsh
 

@@ -3,7 +3,6 @@
 	"installed_packages":
 	[
 		"CoffeeScript",
-		"Color Highlighter",
 		"Djaneiro",
 		"FileDiffs",
 		"Git",
