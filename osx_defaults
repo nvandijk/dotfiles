@@ -11,10 +11,10 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 # General UI/UX
 
 # Set computer name (as done via System Preferences → Sharing)
-sudo scutil --set ComputerName "mara"
-sudo scutil --set HostName "mara"
-sudo scutil --set LocalHostName "mara"
-sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "mara"
+sudo scutil --set ComputerName "quebec"
+sudo scutil --set HostName "quebec"
+sudo scutil --set LocalHostName "quebec"
+sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "quebec"
 
 # Increase window resize speed for Cocoa applications
 defaults write NSGlobalDomain NSWindowResizeTime -float 0.001
@@ -47,7 +47,6 @@ defaults write com.apple.Finder FXPreferredViewStyle -string "clmv"
 chflags nohidden ~/Library
 
 # Desktop
-
 defaults write com.apple.DesktopViewSettings.IconViewSettings arrangeBy -string "name"
 defaults write com.apple.DesktopViewSettings.IconViewSettings iconSize -int 64
 defaults write com.apple.DesktopViewSettings.IconViewSettings gridSpacing -int 100
@@ -81,7 +80,6 @@ defaults write com.apple.dock mineffect "scale"
 defaults write com.apple.dock tilesize -int 50
 
 # Hot corners
-
 # Top left screen corner -> Mission Control
 defaults write com.apple.dock wvous-tl-corner -int 2
 defaults write com.apple.dock wvous-tl-modifier -int 0

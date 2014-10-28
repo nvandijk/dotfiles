@@ -1,6 +1,6 @@
 {
 	"auto_match_enabled": false,
-	"color_scheme": "Packages/Theme - Aqua/Color Schemes/Monokai Aqua.tmTheme",
+	"color_scheme": "Packages/User/Monokai (SL).tmTheme",
 	"detect_indentation": false,
 	"dictionary": "Packages/Language - English/en_US.dic",
 	"ensure_newline_at_eof_on_save": true,
@@ -36,7 +36,9 @@
 		".svn",
 		".sass-cache",
 		".webassets-cache",
-		"__pycache__"
+		"__pycache__",
+		".hgcheck",
+		".vagrant"
 	],
 	"font_face": "DejaVu Sans Mono",
 	"font_options":
@@ -57,7 +59,7 @@
 	"remember_open_files": false,
 	"scroll_speed": 8,
 	"show_full_path": true,
-	"theme": "Nexus.sublime-theme",
+	"theme": "El Capitan.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
 	"wide_caret": true,

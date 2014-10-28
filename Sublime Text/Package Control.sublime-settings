@@ -2,10 +2,8 @@
 	"auto_upgrade_last_run": null,
 	"installed_packages":
 	[
-		"BracketHighlighter",
 		"CoffeeScript",
 		"Color Highlighter",
-		"Dictionaries",
 		"Djaneiro",
 		"FileDiffs",
 		"Git",
@@ -22,10 +20,6 @@
 		"SublimeCodeIntel",
 		"SublimeLinter",
 		"SuperPython",
-		"Theme - Aqua",
-		"Theme - Nexus",
-		"Theme - Nil",
-		"Theme - Sodarized",
-		"VCS Gutter"
+		"Theme - El Capitan"
 	]
 }

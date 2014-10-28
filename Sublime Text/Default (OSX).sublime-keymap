@@ -24,7 +24,6 @@
     { "keys": ["ctrl+super+shift+h"], "command": "move_to", "args": {"to": "bol", "extend": true} },
     { "keys": ["ctrl+super+shift+l"], "command": "move_to", "args": {"to": "eol", "extend": true} },
 
-    { "keys": ["super+alt+ctrl+j"], "command": "code_intel_auto_complete" },
-    { "keys": ["super+alt+ctrl+l"], "command": "goto_python_definition" },
-    { "keys": ["super+alt+ctrl+h"], "command": "back_to_python_definition" }
+    { "keys": ["super+alt+ctrl+j"], "command": "goto_python_definition" },
+    { "keys": ["super+alt+ctrl+k"], "command": "back_to_python_definition" }
 ]
