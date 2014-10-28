@@ -33,3 +33,6 @@ ln -s ~/.dotfiles/Sublime\ Text/ ~/Library/Application\ Support/Sublime\ Text\ 3
 
 echo "symlink Sublime Text command line shortcut"
 [ ! -f /usr/local/bin/subl ] && ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/local/bin/subl
+
+echo "Installing python packages in global site-packages"
+pip install -r ./requirements.txt
