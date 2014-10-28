@@ -105,9 +105,5 @@ alias o="open ."
 alias st="open -a \"SourceTree\" ."
 alias p="python"
 
-# show/hide hidden files in Finder
-alias showdesktop="defaults write com.apple.Finder AppleShowAllFiles -bool true && killall Finder"
-alias hidedesktop="defaults write com.apple.Finder AppleShowAllFiles -bool false && killall Finder"
-
 # flush dns cache
 alias flushdns="dscacheutil -flushcache"
