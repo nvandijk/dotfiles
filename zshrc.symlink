@@ -103,7 +103,6 @@ alias s="subl -n ."
 alias g="git"
 alias o="open ."
 alias st="open -a \"SourceTree\" ."
-alias t="tree -C -a -I .git"
 alias p="python"
 
 # show/hide hidden files in Finder
