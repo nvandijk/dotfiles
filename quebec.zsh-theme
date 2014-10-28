@@ -1,6 +1,3 @@
-# Directory info
-local current_dir='${PWD/#$HOME/~}'
-
 # Git info
 local git_info='$(git_prompt_info)'
 ZSH_THEME_GIT_PROMPT_PREFIX="%{$reset_color%} git:%{$fg[green]%}"
@@ -15,12 +12,23 @@ ZSH_THEME_HG_PROMPT_SUFFIX="%{$reset_color%}"
 ZSH_THEME_HG_PROMPT_DIRTY=" %{$fg[red]%}✗"
 ZSH_THEME_HG_PROMPT_CLEAN=" %{$fg[green]%}✔"
 
-# Prompt format: \n DIRECTORY hg/git:BRANCH STATE \n ➜
+function virtualenv_prompt_info() {
+    if [[ -n $VIRTUAL_ENV ]]; then
+        echo " %{$fg[white]%}venv:%{$fg[green]%}${${VIRTUAL_ENV}:t}%{$reset_color%}"
+    fi
+}
+local virtual_env_info='$(virtualenv_prompt_info)'
+
 PROMPT="
-%{$fg[cyan]%}${current_dir}\
+%{$reset_color%}\
+%{$fg[yellow]%}\
+[\
+%{$fg[white]%}\
+%2~\
+%{$fg[yellow]%}\
+]\
+%{$fg[white]%}\
+${virtual_env_info}\
 ${git_info}\
 ${hg_info}
-%{$reset_color%}➜ "
-
-# RPromt format: TIME
-# RPROMPT="%{$reset_color%}${time}"
+%{$reset_color%}$ "
