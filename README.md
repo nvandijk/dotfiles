@@ -10,11 +10,21 @@ Install Xcode with command-line tools and Homebrew (http://brew.sh)
 
     $ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
+## Install Xcode command line tools
+
+    $ xcode-select --install
+
 ## Install oh-my-zsh
 
 https://github.com/robbyrussell/oh-my-zsh
 
     $ git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
+
+## Install zsh syntax highlighting
+
+http://github.com/zsh-users/zsh-syntax-highlighting
+
+    $ git clone git://github.com/zsh-users/zsh-syntax-highlighting.git
 
 ## Run bootstrapper
 

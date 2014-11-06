@@ -64,6 +64,12 @@ export PROJECT_HOME=$HOME/Development/Projects
 export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python
 source virtualenvwrapper.sh
 
+# zsh syntax highlighting
+source ~/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# z
+. `brew --prefix`/etc/profile.d/z.sh
+
 ### Aliases ###
 
 # enhanced WHOIS lookups

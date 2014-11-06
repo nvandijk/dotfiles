@@ -3,6 +3,7 @@
 brew update
 brew upgrade
 
+brew install z
 brew install zsh
 brew install wget
 brew install git
