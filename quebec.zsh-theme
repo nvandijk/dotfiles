@@ -12,12 +12,15 @@ ZSH_THEME_HG_PROMPT_SUFFIX="%{$reset_color%}"
 ZSH_THEME_HG_PROMPT_DIRTY=" %{$fg[red]%}✗"
 ZSH_THEME_HG_PROMPT_CLEAN=" %{$fg[green]%}✔"
 
+# Virtualenv info
 function virtualenv_prompt_info() {
     if [[ -n $VIRTUAL_ENV ]]; then
         echo " %{$fg[white]%}venv:%{$fg[green]%}${${VIRTUAL_ENV}:t}%{$reset_color%}"
     fi
 }
 local virtual_env_info='$(virtualenv_prompt_info)'
+
+local return_code='%(?..%{$fg[red]%}%? ↵%{$reset_color%})'
 
 PROMPT="
 %{$reset_color%}\
@@ -32,3 +35,5 @@ ${virtual_env_info}\
 ${git_info}\
 ${hg_info}
 %{$reset_color%}$ "
+
+RPROMPT="%{$reset_color%}${return_code} %{$fg[grey]%}%T%{$reset_color%}"
