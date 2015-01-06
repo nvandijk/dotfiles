@@ -113,3 +113,6 @@ alias p="python"
 
 # flush dns cache
 alias flushdns="dscacheutil -flushcache"
+
+# Specify your defaults in this environment variable
+export HOMEBREW_CASK_OPTS="--appdir=/Applications"
