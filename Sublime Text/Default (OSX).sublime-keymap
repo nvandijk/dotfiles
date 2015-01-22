@@ -27,5 +27,6 @@
     { "keys": ["super+alt+ctrl+j"], "command": "goto_python_definition" },
     { "keys": ["super+alt+ctrl+k"], "command": "back_to_python_definition" },
 
-    { "keys": ["ctrl+d"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete Line.sublime-macro"} }
+    { "keys": ["ctrl+d"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete Line.sublime-macro"} },
+    { "keys": ["ctrl+shift+r"], "command": "reveal_in_side_bar" }
 ]

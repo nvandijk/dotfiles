@@ -43,3 +43,7 @@
 
 [url "git://bitbucket.org/"]
     insteadOf = "bitbucket:"
+
+[include]
+    path = ~/.gitcredentials
+
