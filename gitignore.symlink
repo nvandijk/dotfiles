@@ -3,6 +3,7 @@
 .codeintel
 .sass-cache
 .coverage
+.vagrant
 *.pyc
 *.sublime-project
 *.sublime-workspace
@@ -10,3 +11,4 @@
 *.sql
 *.tar
 *.tox
+htmlcov/
