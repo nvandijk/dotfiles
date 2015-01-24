@@ -10,6 +10,7 @@
 	],
 	"installed_packages":
 	[
+		"Anaconda",
 		"CoffeeScript",
 		"Djaneiro",
 		"FileDiffs",
@@ -20,15 +21,12 @@
 		"Package Control",
 		"Puppet",
 		"Puppet Syntax checking",
-		"Python Flake8 Lint",
 		"Quick Look",
 		"requirementstxt",
 		"Sass",
 		"SCSS",
 		"SideBarEnhancements",
 		"Solarized Color Scheme",
-		"SublimeCodeIntel",
-		"SublimeLinter",
 		"SuperPython",
 		"Theme - Spacegray",
 		"Varnish VCL"
