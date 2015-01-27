@@ -1,0 +1,15 @@
+---
+- hosts: localhost
+  tasks:
+  - name: homebrew update
+    homebrew: update_homebrew=yes
+  - name: ensure homebrew packages
+    homebrew: name={{ item }} state=latest
+    with_items:
+    - python
+    - python3
+    - ruby
+    - git
+    - mercurial
+    - ssh-copy-id
+    - zsh
