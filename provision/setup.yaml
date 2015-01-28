@@ -6,10 +6,23 @@
   - name: ensure homebrew packages
     homebrew: name={{ item }} state=latest
     with_items:
-    - python
-    - python3
-    - ruby
-    - git
-    - mercurial
-    - ssh-copy-id
-    - zsh
+      - python
+      - python3
+      - ruby
+      - git
+      - mercurial
+      - ssh-copy-id
+      - zsh
+  - name: ensure symlinks to dotfiles
+    file: src={{ item.src }} dest={{ item.dest }} state=link
+    with_items:
+      - { src: '~/.dotfiles/zshrc.symlink', dest: '~/.zshrc' }
+      - { src: '~/.dotfiles/gitconfig.symlink', dest: '~/.gitconfig' }
+      - { src: '~/.dotfiles/gitignore.symlink', dest: '~/.gitignore' }
+      - { src: '~/.dotfiles/hgrc.symlink', dest: '~/.hgrc' }
+      - { src: '~/.dotfiles/hgignore.symlink', dest: '~/.hgignore_global' }
+      - { src: '~/.dotfiles/opendiff-w', dest: '/usr/local/bin/opendiff-w' }
+      - { src: '~/.dotfiles/Sublime\ Text/', dest: '~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User' }
+      - { src: '/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl', dest: '/usr/local/bin/subl' }
+    tags:
+      - symlinks
