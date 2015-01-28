@@ -26,3 +26,13 @@
       - { src: '/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl', dest: '/usr/local/bin/subl' }
     tags:
       - symlinks
+  - name: ensure global python packages
+    pip: name={{ item }}
+    with_items:
+      - ipdb
+      - ipython
+      - virtualenv
+      - virtualenvwrapper
+      - mercurial_keyring
+    tags:
+      - python
