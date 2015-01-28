@@ -37,8 +37,22 @@
     tags:
       - python
   - name: ensure zsh is the default shell
-    shell: chsh -s /usr/local/bin/zsh
-    sudo: yes
-    sudo_user: nvandijk
+    command: chsh -s /usr/local/bin/zsh
     tags:
       - shell
+  - name: ensure osx defaults
+    command: "{{ item }}"
+    with_items:
+      - sudo -v
+      - sudo scutil --set ComputerName "quebec"
+      - sudo scutil --set HostName "quebec"
+      - sudo scutil --set LocalHostName "quebec"
+      - sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "quebec"
+      - chflags nohidden ~/Library
+      - defaults write com.apple.DesktopViewSettings.IconViewSettings arrangeBy -string "name"
+      - defaults write com.apple.DesktopViewSettings.IconViewSettings iconSize -int 64
+      - defaults write com.apple.DesktopViewSettings.IconViewSettings gridSpacing -int 100
+      - defaults write com.apple.DesktopViewSettings.IconViewSettings textSize -int 12
+      - defaults write com.apple.DesktopViewSettings.IconViewSettings labelOnBottom -bool false
+    tags:
+      - osx
