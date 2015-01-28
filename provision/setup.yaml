@@ -36,3 +36,9 @@
       - mercurial_keyring
     tags:
       - python
+  - name: ensure zsh is the default shell
+    shell: chsh -s /usr/local/bin/zsh
+    sudo: yes
+    sudo_user: nvandijk
+    tags:
+      - shell
