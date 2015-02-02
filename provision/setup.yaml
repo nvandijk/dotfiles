@@ -48,15 +48,40 @@
     command: "{{ item }}"
     with_items:
       - sudo -v
-      - sudo scutil --set ComputerName "quebec"
+      - sudo scutil --set ComputerName "quebec"  # Set computer name (as done via System Preferences -> Sharing)
       - sudo scutil --set HostName "quebec"
       - sudo scutil --set LocalHostName "quebec"
       - sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "quebec"
-      - chflags nohidden ~/Library
-      - defaults write com.apple.DesktopViewSettings.IconViewSettings arrangeBy -string "name"
+      - defaults write NSGlobalDomain NSWindowResizeTime -float 0.001  # Increase window resize speed for Cocoa applications
+      - defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true  # Expand save panel by default
+      - defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false  # Save to disk (not to iCloud) by default
+      - defaults write com.apple.finder DisableAllAnimations -bool true  # Finder: disable window animations and Get Info animations
+      - defaults write NSGlobalDomain AppleShowAllExtensions -bool true  # Finder: show all filename extensions
+      - defaults write com.apple.finder QLEnableTextSelection -bool true  # Finder: allow text selection in Quick Look
+      - defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true  # Avoid creating .DS_Store files on network volumes
+      - defaults write com.apple.Finder FXPreferredViewStyle -string "clmv"  # Use column view in all Finder windows by default (`icnv`, `clmv`, `Flwv`, `Nlsv`)
+      - chflags nohidden ~/Library  # Show the ~/Library folder
+      - defaults write com.apple.DesktopViewSettings.IconViewSettings arrangeBy -string "name"  # Desktop
       - defaults write com.apple.DesktopViewSettings.IconViewSettings iconSize -int 64
       - defaults write com.apple.DesktopViewSettings.IconViewSettings gridSpacing -int 100
       - defaults write com.apple.DesktopViewSettings.IconViewSettings textSize -int 12
       - defaults write com.apple.DesktopViewSettings.IconViewSettings labelOnBottom -bool false
+      - defaults write com.apple.dock show-process-indicators -bool true  # Show indicator lights for open applications in the Dock
+      - defaults write com.apple.dock expose-animation-duration -float 0.1  # Speed up Mission Control animations
+      - defaults write com.apple.dock dashboard-in-overlay -bool true  # Don’t show Dashboard as a Space
+      - defaults write com.apple.dock autohide -bool true  # Automatically hide and show the Dock
+      - defaults write com.apple.dock autohide-delay -float 0  # Remove the auto-hiding Dock delay
+      - defaults write com.apple.dock autohide-time-modifier -float 0.1  # Remove the animation when hiding/showing the Dock
+      - defaults write com.apple.dock mineffect "scale"  # Scale windows when minimizing
+      - defaults write com.apple.dock tilesize -int 50  # Tile size 50
+      - defaults write com.apple.dock wvous-tl-corner -int 2  # Top left screen corner -> Mission Control
+      - defaults write com.apple.dock wvous-tl-modifier -int 0
+      - defaults write com.apple.dock wvous-tr-corner -int 3  # Top right screen corner -> Application Windows
+      - defaults write com.apple.dock wvous-tr-modifier -int 0
+      - defaults write com.apple.dock wvous-bl-corner -int 4  # Bottom left screen corner -> Desktop
+      - defaults write com.apple.dock wvous-bl-modifier -int 0
+      - defaults write com.apple.dock wvous-br-corner -int 12  # Bottom right screen corner -> Notification Center
+      - defaults write com.apple.dock wvous-br-modifier -int 0
+      - defaults write com.apple.mail AddressesIncludeNameOnPasteboard -bool false  # Copy email addresses as `foo@example.com` instead of `Foo Bar <foo@example.com>` in Mail.app
     tags:
       - osx
