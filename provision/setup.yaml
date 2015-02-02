@@ -18,11 +18,11 @@
       - wget
       - gettext
   - name: ensure oh my zsh repo is cloned
-    git: repo=http://github.com/robbyrussell/oh-my-zsh.git dest=~/.oh-my-zsh
+    git: repo=https://github.com/robbyrussell/oh-my-zsh.git dest=~/.oh-my-zsh
     tags:
       - shell
   - name: ensure zsh syntax highligthing repo is cloned
-    git: repo=http://github.com/zsh-users/zsh-syntax-highlighting dest=~/.zsh-syntax-highlighting
+    git: repo=https://github.com/zsh-users/zsh-syntax-highlighting dest=~/.zsh-syntax-highlighting
     tags:
       - shell
   - name: ensure zsh is the default shell

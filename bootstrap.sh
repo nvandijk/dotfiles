@@ -18,7 +18,7 @@ export PATH=/usr/local/bin:$PATH
 # Download and install python
 if [[ ! -x /usr/local/bin/python ]]; then
     echo "Installing Python (with homebrew) ..."
-    brew install python --framework --with-brewed-openssl
+    brew install python
 fi
 
 # Download and install Ansible
