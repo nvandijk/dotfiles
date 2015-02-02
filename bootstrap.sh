@@ -1,38 +1,32 @@
 #!/bin/bash
 
-echo "setup os x settings"
-./osx_defaults
+# Download and install Command Line Tools
+if [[ ! -x /usr/bin/gcc ]]; then
+    echo "Installing xcode (Command Line Tools) ..."
+    xcode-select --install
+fi
 
-echo "setup brew formula"
-./brew
+# Download and install Homebrew
+if [[ ! -x /usr/local/bin/brew ]]; then
+    echo "Installing Homebrew ..."
+    ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
+fi
 
-echo "set default shell to zsh"
-chsh -s /usr/local/bin/zsh
+# Modify the PATH
+export PATH=/usr/local/bin:$PATH
 
-echo "symlink .zshrc"
-[ ! -f ~/.zshrc ] && ln -s ~/.dotfiles/zshrc.symlink ~/.zshrc
+# Download and install python
+if [[ ! -x /usr/local/bin/python ]]; then
+    echo "Installing Python (with homebrew) ..."
+    brew install python --framework --with-brewed-openssl
+fi
 
-echo "symlink .gitconfig"
-[ ! -f ~/.gitconfig ] && ln -s ~/.dotfiles/gitconfig.symlink ~/.gitconfig
+# Download and install Ansible
+if [[ ! -x /usr/local/bin/ansible ]]; then
+    echo "Installing Ansible (with pip) ..."
+    pip install ansible
+fi
 
-echo "symlink .gitignore"
-[ ! -f ~/.gitignore ] && ln -s ~/.dotfiles/gitignore.symlink ~/.gitignore
-
-echo "symlink .hgrc"
-[ ! -f ~/.hgrc ] && ln -s ~/.dotfiles/hgrc.symlink ~/.hgrc
-
-echo "symlink .hgignore_global"
-[ ! -f ~/.hgignore_global ] && ln -s ~/.dotfiles/hgignore.symlink ~/.hgignore_global
-
-echo "symlink opendiff-w"
-[ ! -f /usr/local/bin/opendiff-w ] && ln -s ~/.dotfiles/opendiff-w /usr/local/bin/opendiff-w
-
-echo "symlink Sublime Text User dir"
-rm -r ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
-ln -s ~/.dotfiles/Sublime\ Text/ ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
-
-echo "symlink Sublime Text command line shortcut"
-[ ! -f /usr/local/bin/subl ] && ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/local/bin/subl
-
-echo "Installing python packages in global site-packages"
-pip install -r ./requirements.txt
+# Provision the box
+echo "Provisioning this box with Ansible ..."
+ansible-playbook -i provision/inventory provision/setup.yaml
