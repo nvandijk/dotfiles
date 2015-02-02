@@ -22,7 +22,7 @@ pager = LESS='FSRX' less
 attend = cat, diff, glog, log, incoming, outgoing, lg, show, l
 
 [alias]
-l = glog --style=/Users/nvandijk/.dotfiles/hg-prettylog.lg
+l = glog --style=/Users/nvandijk/.dotfiles/extras/hg-prettylog.lg
 s = status
 c = commit -m
 m = merge
