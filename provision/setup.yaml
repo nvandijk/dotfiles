@@ -9,10 +9,14 @@
       - python
       - python3
       - ruby
+      - node
       - git
       - mercurial
-      - ssh-copy-id
       - zsh
+      - z
+      - ssh-copy-id
+      - wget
+      - gettext
   - name: ensure symlinks to dotfiles
     file: src={{ item.src }} dest={{ item.dest }} state=link
     with_items:
