@@ -30,3 +30,7 @@ http://github.com/zsh-users/zsh-syntax-highlighting
 
     $ cd ~/.dotfiles
     $ ./bootstrap.sh
+
+## OS X defaults inspiration
+
+http://mths.be/osx
