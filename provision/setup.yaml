@@ -26,6 +26,7 @@
     tags:
       - shell
   - name: ensure zsh is the default shell
+    sudo: yes
     command: chsh -s /usr/local/bin/zsh
     tags:
       - shell
@@ -53,13 +54,13 @@
     tags:
       - python
   - name: ensure osx defaults
+    sudo: yes
     command: "{{ item }}"
     with_items:
-      - sudo -v
-      - sudo scutil --set ComputerName "quebec"  # Set computer name (as done via System Preferences -> Sharing)
-      - sudo scutil --set HostName "quebec"
-      - sudo scutil --set LocalHostName "quebec"
-      - sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "quebec"
+      - scutil --set ComputerName "quebec"  # Set computer name (as done via System Preferences -> Sharing)
+      - scutil --set HostName "quebec"
+      - scutil --set LocalHostName "quebec"
+      - defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "quebec"
       - defaults write NSGlobalDomain NSWindowResizeTime -float 0.001  # Increase window resize speed for Cocoa applications
       - defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true  # Expand save panel by default
       - defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false  # Save to disk (not to iCloud) by default
