@@ -13,12 +13,14 @@
     l = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative --all
     ll = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
     s = status -s
-    c = commit -am
+    c = commit -m
+    ca = commit -am
     a = add
-    f = fetch --all
+    f = fetch --all --prune
     p = pull --ff-only
-    m = merge
+    m = merge --no-ff
     d = diff
+    cdiff = diff --cached
     rb = rebase
     rbc = rebase --continue
     co = checkout
