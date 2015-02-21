@@ -6,6 +6,9 @@
     excludesfile = ~/.gitignore
     pager = less -S
 
+[init]
+    templatedir = ~/.git-templates
+
 [color]
     ui = true
 
