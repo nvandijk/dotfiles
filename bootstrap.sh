@@ -12,6 +12,10 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 echo "Installing Homebrew Cask ..."
 brew install caskroom/cask/brew-cask
 
+# Install Homebrew cask tap
+echo "Installing Homebrew Cask tap..."
+brew tap caskroom/versions
+
 # Modify the PATH
 export PATH=/usr/local/bin:$PATH
 
