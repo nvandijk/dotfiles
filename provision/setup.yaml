@@ -17,6 +17,29 @@
       - ssh-copy-id
       - wget
       - gettext
+  - name: homebrew cask
+    homebrew_cask: name={{ item }} state=present
+    with_items:
+      - iterm2
+      - virtualbox
+      - vagrant
+      - sublime-text3
+      - sourcetree
+      - launchbar
+      - little-snitch
+      - 1password
+      - dropbox
+      - google-chrome
+      - firefox
+      - omnifocus
+      - ibank
+      - spotify
+      - slack
+      - flux
+      - flash
+      - java
+    tags:
+      - cask
   - name: ensure oh my zsh repo is cloned
     git: repo=https://github.com/robbyrussell/oh-my-zsh.git dest=~/.oh-my-zsh
     tags:
@@ -27,6 +50,7 @@
       - shell
   - name: ensure zsh is the default shell
     sudo: yes
+    sudo_user: nvandijk
     command: chsh -s /usr/local/bin/zsh
     tags:
       - shell
@@ -55,12 +79,12 @@
       - python
   - name: ensure osx defaults
     sudo: yes
+    sudo_user: nvandijk
     command: "{{ item }}"
     with_items:
       - scutil --set ComputerName "quebec"  # Set computer name (as done via System Preferences -> Sharing)
       - scutil --set HostName "quebec"
       - scutil --set LocalHostName "quebec"
-      - defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "quebec"
       - defaults write NSGlobalDomain NSWindowResizeTime -float 0.001  # Increase window resize speed for Cocoa applications
       - defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true  # Expand save panel by default
       - defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false  # Save to disk (not to iCloud) by default
