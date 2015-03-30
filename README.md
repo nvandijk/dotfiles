@@ -9,6 +9,11 @@
     $ cd ~/.dotfiles
     $ ./bootstrap.sh
 
+## Manual steps
+
+- Install Sublime Text Package Manager from: https://packagecontrol.io
+- Install iTerm colors from: https://github.com/chriskempson/base16
+
 ## OS X defaults inspiration
 
 http://mths.be/osx
