@@ -1,16 +1,16 @@
 #!/bin/bash
 
 # Download and install Command Line Tools
-if [[ ! -x /usr/bin/gcc ]]; then
-    echo "Installing xcode (Command Line Tools) ..."
-    xcode-select --install
-fi
+echo "Installing xcode (Command Line Tools) ..."
+xcode-select --install
 
 # Download and install Homebrew
-if [[ ! -x /usr/local/bin/brew ]]; then
-    echo "Installing Homebrew ..."
-    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-fi
+echo "Installing Homebrew ..."
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+# Install Homebrew cask
+echo "Installing Homebrew Cask ..."
+brew install caskroom/cask/brew-cask
 
 # Modify the PATH
 export PATH=/usr/local/bin:$PATH
