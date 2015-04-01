@@ -38,6 +38,7 @@
       - flux
       - flash
       - java
+      - sizeup
     tags:
       - cask
   - name: ensure oh my zsh repo is cloned
