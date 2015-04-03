@@ -21,10 +21,13 @@
     homebrew_cask: name={{ item }} state=present
     with_items:
       - iterm2
+      - gpgtools
+      - tunnelblick
       - virtualbox
       - vagrant
       - sublime-text3
       - sourcetree
+      - paw
       - launchbar
       - little-snitch
       - 1password
