@@ -56,13 +56,17 @@ export LANG="en_US"
 export PATH=/usr/local/bin:/usr/local/opt/ruby/bin:$PATH
 
 # Mercurial needs to use brew python site-packages
-export PYTHONPATH=/usr/local/lib/python2.7/site-packages:$PYTHONPATH
+# export PYTHONPATH=/usr/local/lib/python2.7/site-packages:$PYTHONPATH
 
 # virtualenvwrapper
-export WORKON_HOME=$HOME/Development/Virtualenvs
-export PROJECT_HOME=$HOME/Development/Projects
+export WORKON_HOME=$HOME/Workspace/Virtualenvs
+export PROJECT_HOME=$HOME/Workspace/Projects
 export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python
 source virtualenvwrapper.sh
+
+# pyenv
+export PYENV_ROOT=$HOME/.pyenv
+export PATH=$PYENV_ROOT/bin:$PATH
 
 # zsh syntax highlighting
 source ~/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
