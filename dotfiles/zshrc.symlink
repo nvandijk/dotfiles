@@ -110,6 +110,7 @@ alias sp="subl -n *.sublime-project"
 alias s="subl -n ."
 
 # application shortcuts
+alias git="hub"  # wrap git with hub (from github)
 alias g="git"
 alias o="open ."
 alias st="open -a \"SourceTree\" ."
