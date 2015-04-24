@@ -58,7 +58,7 @@ export PATH=/usr/local/bin:/usr/local/opt/ruby/bin:$PATH
 # virtualenvwrapper
 export WORKON_HOME=$HOME/Workspace/Virtualenvs
 export PROJECT_HOME=$HOME/Workspace/Projects
-export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python
+export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
 source virtualenvwrapper.sh
 
 # zsh syntax highlighting
