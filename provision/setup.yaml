@@ -6,18 +6,21 @@
   - name: ensure homebrew packages
     homebrew: name={{ item }} state=latest
     with_items:
-      - python
-      - python3
-      - ruby
-      - node
+      - elasticsearch
+      - gettext
       - git
       - hub
       - mercurial
-      - zsh
-      - z
+      - node
+      - postgresql
+      - python
+      - python3
+      - redis
+      - ruby
       - ssh-copy-id
       - wget
-      - gettext
+      - z
+      - zsh
   - name: homebrew cask
     homebrew_cask: name={{ item }} state=present
     with_items:
