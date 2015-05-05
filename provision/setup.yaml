@@ -21,28 +21,29 @@
   - name: homebrew cask
     homebrew_cask: name={{ item }} state=present
     with_items:
-      - iterm2
-      - gpgtools
-      - tunnelblick
-      - virtualbox
-      - vagrant
-      - sublime-text3
-      - sourcetree
-      - paw
-      - launchbar
-      - little-snitch
       - 1password
       - dropbox
-      - google-chrome
       - firefox
-      - omnifocus
-      - ibank
-      - spotify
-      - slack
-      - flux
       - flash
+      - flux
+      - google-chrome
+      - gpgtools
+      - ibank
+      - iterm2
       - java
+      - launchbar
+      - little-snitch
+      - omnifocus
+      - paw
       - sizeup
+      - skype
+      - slack
+      - sourcetree
+      - spotify
+      - sublime-text3
+      - tunnelblick
+      - vagrant
+      - virtualbox
     tags:
       - cask
   - name: ensure oh my zsh repo is cloned
