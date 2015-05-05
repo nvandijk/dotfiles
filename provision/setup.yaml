@@ -1,0 +1,135 @@
+---
+- hosts: localhost
+  tasks:
+  - name: homebrew update
+    homebrew: update_homebrew=yes
+  - name: ensure homebrew packages
+    homebrew: name={{ item }} state=latest
+    with_items:
+      - python
+      - python3
+      - ruby
+      - node
+      - git
+      - hub
+      - mercurial
+      - zsh
+      - z
+      - ssh-copy-id
+      - wget
+      - gettext
+  - name: homebrew cask
+    homebrew_cask: name={{ item }} state=present
+    with_items:
+      - iterm2
+      - gpgtools
+      - tunnelblick
+      - virtualbox
+      - vagrant
+      - sublime-text3
+      - sourcetree
+      - paw
+      - launchbar
+      - little-snitch
+      - 1password
+      - dropbox
+      - google-chrome
+      - firefox
+      - omnifocus
+      - ibank
+      - spotify
+      - slack
+      - flux
+      - flash
+      - java
+      - sizeup
+    tags:
+      - cask
+  - name: ensure oh my zsh repo is cloned
+    git: repo=https://github.com/robbyrussell/oh-my-zsh.git dest=~/.oh-my-zsh
+    tags:
+      - shell
+  - name: ensure zsh syntax highligthing repo is cloned
+    git: repo=https://github.com/zsh-users/zsh-syntax-highlighting dest=~/.zsh-syntax-highlighting
+    tags:
+      - shell
+  - name: ensure zsh is the default shell
+    sudo: yes
+    sudo_user: nvandijk
+    command: chsh -s /usr/local/bin/zsh
+    tags:
+      - shell
+  - name: ensure symlinks to dotfiles
+    file: src={{ item.src }} dest={{ item.dest }} state=link
+    with_items:
+      - { src: '~/.dotfiles/dotfiles/zshrc.symlink', dest: '~/.zshrc' }
+      - { src: '~/.dotfiles/dotfiles/gitconfig.symlink', dest: '~/.gitconfig' }
+      - { src: '~/.dotfiles/dotfiles/gitignore.symlink', dest: '~/.gitignore' }
+      - { src: '~/.dotfiles/dotfiles/hgrc.symlink', dest: '~/.hgrc' }
+      - { src: '~/.dotfiles/dotfiles/hgignore.symlink', dest: '~/.hgignore_global' }
+      - { src: '~/.dotfiles/extras/opendiff-w', dest: '/usr/local/bin/opendiff-w' }
+      - { src: '~/.dotfiles/Sublime\ Text/', dest: '~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User' }
+      - { src: '/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl', dest: '/usr/local/bin/subl' }
+    tags:
+      - symlinks
+  - name: ensure global python packages
+    pip: name={{ item }}
+    with_items:
+      - ipdb
+      - ipython
+      - virtualenv
+      - virtualenvwrapper
+      - mercurial_keyring
+    tags:
+      - python
+  - name: ensure osx defaults
+    sudo: yes
+    sudo_user: nvandijk
+    command: "{{ item }}"
+    with_items:
+      - scutil --set ComputerName "quebec"  # Set computer name (as done via System Preferences -> Sharing)
+      - scutil --set HostName "quebec"
+      - scutil --set LocalHostName "quebec"
+      - defaults write NSGlobalDomain NSWindowResizeTime -float 0.001  # Increase window resize speed for Cocoa applications
+      - defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true  # Expand save panel by default
+      - defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false  # Save to disk (not to iCloud) by default
+      - defaults write com.apple.finder DisableAllAnimations -bool true  # Finder: disable window animations and Get Info animations
+      - defaults write NSGlobalDomain AppleShowAllExtensions -bool true  # Finder: show all filename extensions
+      - defaults write com.apple.finder QLEnableTextSelection -bool true  # Finder: allow text selection in Quick Look
+      - defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true  # Avoid creating .DS_Store files on network volumes
+      - defaults write com.apple.Finder FXPreferredViewStyle -string "clmv"  # Use column view in all Finder windows by default (`icnv`, `clmv`, `Flwv`, `Nlsv`)
+      - chflags nohidden ~/Library  # Show the ~/Library folder
+      - defaults write com.apple.DesktopViewSettings.IconViewSettings arrangeBy -string "name"  # Desktop
+      - defaults write com.apple.DesktopViewSettings.IconViewSettings iconSize -int 64
+      - defaults write com.apple.DesktopViewSettings.IconViewSettings gridSpacing -int 100
+      - defaults write com.apple.DesktopViewSettings.IconViewSettings textSize -int 12
+      - defaults write com.apple.DesktopViewSettings.IconViewSettings labelOnBottom -bool false
+      - defaults write com.apple.dock show-process-indicators -bool true  # Show indicator lights for open applications in the Dock
+      - defaults write com.apple.dock expose-animation-duration -float 0.1  # Speed up Mission Control animations
+      - defaults write com.apple.dock dashboard-in-overlay -bool true  # Don’t show Dashboard as a Space
+      - defaults write com.apple.dock autohide -bool true  # Automatically hide and show the Dock
+      - defaults write com.apple.dock autohide-delay -float 0  # Remove the auto-hiding Dock delay
+      - defaults write com.apple.dock autohide-time-modifier -float 0.1  # Remove the animation when hiding/showing the Dock
+      - defaults write com.apple.dock mineffect "scale"  # Scale windows when minimizing
+      - defaults write com.apple.dock tilesize -int 50  # Tile size 50
+      - defaults write com.apple.dock wvous-tl-corner -int 2  # Top left screen corner -> Mission Control
+      - defaults write com.apple.dock wvous-tl-modifier -int 0
+      - defaults write com.apple.dock wvous-tr-corner -int 3  # Top right screen corner -> Application Windows
+      - defaults write com.apple.dock wvous-tr-modifier -int 0
+      - defaults write com.apple.dock wvous-bl-corner -int 4  # Bottom left screen corner -> Desktop
+      - defaults write com.apple.dock wvous-bl-modifier -int 0
+      - defaults write com.apple.dock wvous-br-corner -int 12  # Bottom right screen corner -> Notification Center
+      - defaults write com.apple.dock wvous-br-modifier -int 0
+      - defaults write com.apple.mail AddressesIncludeNameOnPasteboard -bool false  # Copy email addresses as `foo@example.com` instead of `Foo Bar <foo@example.com>` in Mail.app
+    tags:
+      - osx
+  - name: Set MOTD
+    sudo: yes
+    copy:
+      src: files/motd
+      dest: /etc/motd
+      owner: nvandijk
+      group: wheel
+      mode: '644'
+    tags:
+      - motd

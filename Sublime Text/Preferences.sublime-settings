@@ -1,5 +1,6 @@
 {
 	"auto_match_enabled": false,
+	"caret_style": "solid",
 	"color_scheme": "Packages/User/base16-eighties.dark (SL).tmTheme",
 	"detect_indentation": false,
 	"ensure_newline_at_eof_on_save": true,
@@ -35,9 +36,11 @@
 		".svn",
 		".sass-cache",
 		".webassets-cache",
+		".tox",
 		"__pycache__",
 		".hgcheck",
-		".vagrant"
+		".vagrant",
+		"htmlcov"
 	],
 	"font_face": "DejaVu Sans Mono",
 	"font_options":
@@ -56,6 +59,10 @@
 	"line_padding_bottom": 2,
 	"line_padding_top": 2,
 	"remember_open_files": false,
+	"rulers":
+	[
+		79
+	],
 	"scroll_speed": 8,
 	"show_full_path": true,
 	"theme": "Spacegray Eighties.sublime-theme",
