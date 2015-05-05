@@ -36,9 +36,11 @@
 		".svn",
 		".sass-cache",
 		".webassets-cache",
+		".tox",
 		"__pycache__",
 		".hgcheck",
-		".vagrant"
+		".vagrant",
+		"htmlcov"
 	],
 	"font_face": "DejaVu Sans Mono",
 	"font_options":
