@@ -56,7 +56,7 @@ export LANG="en_US"
 export PATH=/usr/local/bin:/usr/local/opt/ruby/bin:$PATH
 
 # EDITOR
-export EDITOR=subl
+export EDITOR=vim
 
 # virtualenvwrapper
 export WORKON_HOME=$HOME/Workspace/Virtualenvs
