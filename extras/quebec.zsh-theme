@@ -36,4 +36,4 @@ ${git_info}\
 ${hg_info}
 %{$reset_color%}$ "
 
-RPROMPT="%{$reset_color%}${return_code} %{$fg[grey]%}%T%{$reset_color%}"
+RPROMPT="%{$reset_color%}${return_code} %{$fg[white]%}%T%{$reset_color%}"
