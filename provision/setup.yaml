@@ -57,6 +57,12 @@
     git: repo=https://github.com/zsh-users/zsh-syntax-highlighting dest=~/.zsh-syntax-highlighting
     tags:
       - shell
+  - name: ensure zsh is available
+    sudo: yes
+    lineinfile:
+      dest: /etc/shells
+      line: /usr/local/bin/zsh
+      state: present
   - name: ensure zsh is the default shell
     sudo: yes
     sudo_user: nvandijk
