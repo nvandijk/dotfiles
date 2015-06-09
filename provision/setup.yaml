@@ -2,28 +2,9 @@
 - hosts: localhost
   roles:
     - homebrew
+    - shell
 
   tasks:
-  - name: ensure oh my zsh repo is cloned
-    git: repo=https://github.com/robbyrussell/oh-my-zsh.git dest=~/.oh-my-zsh
-    tags:
-      - shell
-  - name: ensure zsh syntax highligthing repo is cloned
-    git: repo=https://github.com/zsh-users/zsh-syntax-highlighting dest=~/.zsh-syntax-highlighting
-    tags:
-      - shell
-  - name: ensure zsh is available
-    sudo: yes
-    lineinfile:
-      dest: /etc/shells
-      line: /usr/local/bin/zsh
-      state: present
-  - name: ensure zsh is the default shell
-    sudo: yes
-    sudo_user: nvandijk
-    command: chsh -s /usr/local/bin/zsh
-    tags:
-      - shell
   - name: ensure symlinks to dotfiles
     file: src={{ item.src }} dest={{ item.dest }} state=link
     with_items:
