@@ -1,0 +1,42 @@
+---
+homebrew:
+  packages:
+    - elasticsearch
+    - gettext
+    - git
+    - hub
+    - mercurial
+    - node
+    - postgresql
+    - python
+    - python3
+    - redis
+    - ruby
+    - ssh-copy-id
+    - wget
+    - z
+    - zsh
+  cask_packages:
+    - 1password
+    - dropbox
+    - firefox
+    - flash
+    - flux
+    - google-chrome
+    - gpgtools
+    - ibank
+    - iterm2
+    - java
+    - launchbar
+    - little-snitch
+    - omnifocus
+    - paw
+    - sizeup
+    - skype
+    - slack
+    - sourcetree
+    - spotify
+    - sublime-text3
+    - tunnelblick
+    - vagrant
+    - virtualbox

@@ -1,54 +1,9 @@
 ---
 - hosts: localhost
+  roles:
+    - homebrew
+
   tasks:
-  - name: homebrew update
-    homebrew: update_homebrew=yes
-  - name: ensure homebrew packages
-    homebrew: name={{ item }} state=latest
-    with_items:
-      - elasticsearch
-      - gettext
-      - git
-      - hub
-      - mercurial
-      - node
-      - postgresql
-      - python
-      - python3
-      - redis
-      - ruby
-      - ssh-copy-id
-      - wget
-      - z
-      - zsh
-  - name: homebrew cask
-    homebrew_cask: name={{ item }} state=present
-    with_items:
-      - 1password
-      - dropbox
-      - firefox
-      - flash
-      - flux
-      - google-chrome
-      - gpgtools
-      - ibank
-      - iterm2
-      - java
-      - launchbar
-      - little-snitch
-      - omnifocus
-      - paw
-      - sizeup
-      - skype
-      - slack
-      - sourcetree
-      - spotify
-      - sublime-text3
-      - tunnelblick
-      - vagrant
-      - virtualbox
-    tags:
-      - cask
   - name: ensure oh my zsh repo is cloned
     git: repo=https://github.com/robbyrussell/oh-my-zsh.git dest=~/.oh-my-zsh
     tags:
