@@ -7,18 +7,10 @@
       tags: shell
     - role: dotfiles
       tags: dotfiles
+    - role: python
+      tags: python
 
   tasks:
-  - name: ensure global python packages
-    pip: name={{ item }}
-    with_items:
-      - ipdb
-      - ipython
-      - virtualenv
-      - virtualenvwrapper
-      - mercurial_keyring
-    tags:
-      - python
   - name: ensure osx defaults
     sudo: yes
     sudo_user: nvandijk

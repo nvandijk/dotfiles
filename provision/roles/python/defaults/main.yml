@@ -1,0 +1,8 @@
+---
+python:
+  packages:
+    - ipdb
+    - ipython
+    - virtualenv
+    - virtualenvwrapper
+    - mercurial_keyring

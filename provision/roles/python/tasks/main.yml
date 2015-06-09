@@ -1,0 +1,5 @@
+---
+- name: ensure global python packages
+  pip:
+    name: "{{ item }}"
+  with_items: "{{ python.packages }}"
