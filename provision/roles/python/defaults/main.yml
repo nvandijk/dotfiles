@@ -3,6 +3,8 @@ python:
   packages:
     - ipdb
     - ipython
+    - mercurial_keyring
+    - pdbpp
+    - pygments
     - virtualenv
     - virtualenvwrapper
-    - mercurial_keyring

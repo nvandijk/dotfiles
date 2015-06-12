@@ -111,6 +111,7 @@ alias g="git"
 alias o="open ."
 alias st="open -a \"SourceTree\" ."
 alias p="python"
+alias ccat="pygmentize -g"
 
 # flush dns cache
 alias flushdns="dscacheutil -flushcache"
