@@ -1,5 +1,13 @@
 ---
-- name: ensure global python packages
+- name: ensure global python 2.7 packages
   pip:
     name: "{{ item }}"
+    state: latest
+  with_items: "{{ python.packages }}"
+
+- name: ensure global python 3.4 packages
+  pip:
+    name: "{{ item }}"
+    state: latest
+    executable: pip3
   with_items: "{{ python.packages }}"
