@@ -18,17 +18,20 @@
     s = status -s
     c = commit -m
     ca = commit -am
-    a = add
+    ap = add --patch
     f = fetch --all --prune
     p = pull --ff-only
     m = merge --no-ff
     d = diff
-    cdiff = diff --cached
+    dc = diff --cached
     rb = rebase
     rbc = rebase --continue
     co = checkout
     br = branch
     ps = push
+    psf = push --force-with-lease
+    cp = cherry-pick
+    rh = reset --hard HEAD
 
 [push]
     default = simple
