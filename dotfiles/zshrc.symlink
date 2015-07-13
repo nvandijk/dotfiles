@@ -53,7 +53,7 @@ export LC_ALL="en_US.UTF-8"
 export LANG="en_US"
 
 # PATH
-export PATH=/usr/local/bin:/usr/local/opt/ruby/bin:$PATH
+export PATH=/usr/local/bin:/usr/local/sbin:/usr/local/opt/ruby/bin:$PATH
 
 # EDITOR
 export EDITOR=vim
