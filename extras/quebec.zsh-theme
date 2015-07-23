@@ -23,7 +23,7 @@ local virtual_env_info='$(virtualenv_prompt_info)'
 local return_code='%(?..%{$fg[red]%}%? ↵%{$reset_color%})'
 
 PROMPT="%{$reset_color%}\
-%{$fg[white]%}\
+%{$fg[blue]%}\
 %2~\
 ${git_info}\
 ${hg_info}\
