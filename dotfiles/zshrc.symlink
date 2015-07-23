@@ -55,6 +55,11 @@ export LANG="en_US"
 # PATH
 export PATH=/usr/local/bin:/usr/local/sbin:/usr/local/opt/ruby/bin:$PATH
 
+# VMware Fusion
+if [ -d "/Applications/VMware Fusion.app/Contents/Library" ]; then
+    export PATH=$PATH:"/Applications/VMware Fusion.app/Contents/Library"
+fi
+
 # EDITOR
 export EDITOR=vim
 
