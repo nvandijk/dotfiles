@@ -1,7 +1,14 @@
 {
 	"auto_match_enabled": false,
+    "always_show_minimap_viewport": true,
+    "indent_guide_options": [
+        "draw_normal",
+        "draw_active"
+    ],
 	"caret_style": "solid",
-	"color_scheme": "Packages/User/base16-eighties.dark (SL).tmTheme",
+	// "color_scheme": "Packages/User/base16-eighties.dark (SL).tmTheme",
+    "color_scheme": "Packages/Material Theme/schemes/Material-Theme.tmTheme",
+    // "color_scheme": "Packages/Material Theme/schemes/Material-Theme-Darker.tmTheme",
 	"detect_indentation": false,
 	"dictionary": "Packages/Dictionaries/Dutch.dic",
 	"ensure_newline_at_eof_on_save": true,
@@ -46,8 +53,9 @@
 	"font_face": "DejaVu Sans Mono",
 	"font_options":
 	[
-		"no_italic",
-		"no_bold"
+        "gray_antialias",
+        "no_italic",
+        "no_bold"
 	],
 	"font_size": 16.0,
 	"highlight_line": true,
@@ -57,8 +65,8 @@
 	[
 		"Vintage"
 	],
-	"line_padding_bottom": 2,
-	"line_padding_top": 2,
+	"line_padding_bottom": 3,
+	"line_padding_top": 3,
 	"remember_open_files": false,
 	"rulers":
 	[
@@ -66,7 +74,10 @@
 	],
 	"scroll_speed": 8,
 	"show_full_path": true,
-	"theme": "Spacegray Eighties.sublime-theme",
+    "overlay_scroll_bars": "enabled",
+	// "theme": "Spacegray Eighties.sublime-theme",
+    "theme": "Material-Theme.sublime-theme",
+    // "theme": "Material-Theme-Darker.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
 	"wide_caret": true,
