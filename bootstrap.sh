@@ -25,4 +25,4 @@ fi
 
 # Provision the box
 echo "Provisioning this box with Ansible ..."
-ansible-playbook -i provision/inventory --ask-sudo-pass provision/setup.yaml
+ansible-playbook -i provision/inventory --ask-sudo-pass provision/play.yaml
