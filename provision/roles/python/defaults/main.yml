@@ -1,8 +1,11 @@
 ---
 python:
+
   packages:
     - ipdb
     - ipython
+
+  packages_py3:
     - mercurial_keyring
     - pygments
     - virtualenv

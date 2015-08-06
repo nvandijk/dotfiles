@@ -10,4 +10,4 @@
     name: "{{ item }}"
     state: latest
     executable: pip3
-  with_items: "{{ python.packages }}"
+  with_items: python.packages + python.packages_py3
