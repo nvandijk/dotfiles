@@ -14,23 +14,24 @@
 
 [alias]
     l = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative --all --topo-order
-    ld = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative --all --author-date-order
+    ldate = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative --all --author-date-order
     s = status -s
     c = commit -m
     ca = commit -am
     a = add
-    ap = add --patch
+    apatch = add --patch
     f = fetch --all --prune
     p = pull --ff-only
     m = merge --no-ff
     d = diff
-    dc = diff --cached
+    dcached = diff --cached
     rb = rebase
     rbc = rebase --continue
     co = checkout
     br = branch
+    brcleanup = !git branch --merged master | grep -v '* master' | xargs -n 1 git branch -d
     ps = push
-    psf = push --force-with-lease
+    psforce = push --force-with-lease
     cp = cherry-pick
     rh = reset --hard HEAD
 
