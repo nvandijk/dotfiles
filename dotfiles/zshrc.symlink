@@ -119,7 +119,7 @@ alias p="python"
 alias ccat="pygmentize -g"
 
 # flush dns cache
-alias flushdns="dscacheutil -flushcache"
+alias flushdns="sudo dscacheutil -flushcache;sudo killall -HUP mDNSResponder"
 
 # Specify your defaults in this environment variable
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
