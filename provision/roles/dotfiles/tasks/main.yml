@@ -12,4 +12,4 @@
     - { src: '~/.dotfiles/dotfiles/hgignore.symlink', dest: '~/.hgignore_global' }
     - { src: '~/.dotfiles/extras/opendiff-w', dest: '/usr/local/bin/opendiff-w' }
     - { src: '~/.dotfiles/sublimetext/', dest: '~/Library/Application Support/Sublime Text 3/Packages/User' }
-    - { src: '/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl', dest: '/usr/local/bin/subl' }
+    - { src: '~/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl', dest: '/usr/local/bin/subl' }
