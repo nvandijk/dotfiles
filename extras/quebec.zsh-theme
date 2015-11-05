@@ -2,14 +2,14 @@
 local git_info='$(git_prompt_info)'
 ZSH_THEME_GIT_PROMPT_PREFIX="%{$reset_color%}:%{$fg[yellow]%}"
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}"
-ZSH_THEME_GIT_PROMPT_DIRTY=" %{$fg[red]%}⚡%{$reset_color%}"
+ZSH_THEME_GIT_PROMPT_DIRTY=" %{$fg[red]%}+%{$reset_color%}"
 ZSH_THEME_GIT_PROMPT_CLEAN=""
 
 # Mercurial info
 local hg_info='$(hg_prompt_info)'
 ZSH_THEME_HG_PROMPT_PREFIX="%{$reset_color%} hg:%{$fg[yellow]%}"
 ZSH_THEME_HG_PROMPT_SUFFIX="%{$reset_color%}"
-ZSH_THEME_HG_PROMPT_DIRTY=" %{$fg[red]%}⚡%{$reset_color%}"
+ZSH_THEME_HG_PROMPT_DIRTY=" %{$fg[red]%}+%{$reset_color%}"
 ZSH_THEME_HG_PROMPT_CLEAN=""
 
 # Virtualenv info
