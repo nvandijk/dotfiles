@@ -1,20 +1,19 @@
 ---
 - name: ensure osx defaults
-  sudo: yes
   command: "{{ item }}"
   with_items:
     - scutil --set ComputerName "quebec"  # Set computer name (as done via System Preferences -> Sharing)
     - scutil --set HostName "quebec"
     - scutil --set LocalHostName "quebec"
+    - chflags nohidden ~/Library  # Show the ~/Library folder
     - defaults write NSGlobalDomain NSWindowResizeTime -float 0.001  # Increase window resize speed for Cocoa applications
     - defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true  # Expand save panel by default
     - defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false  # Save to disk (not to iCloud) by default
     - defaults write com.apple.finder DisableAllAnimations -bool true  # Finder: disable window animations and Get Info animations
     - defaults write NSGlobalDomain AppleShowAllExtensions -bool true  # Finder: show all filename extensions
     - defaults write com.apple.finder QLEnableTextSelection -bool true  # Finder: allow text selection in Quick Look
+    - defaults write com.apple.finder FXPreferredViewStyle -string "clmv"  # Use column view in all Finder windows by default (`icnv`, `clmv`, `Flwv`, `Nlsv`)
     - defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true  # Avoid creating .DS_Store files on network volumes
-    - defaults write com.apple.Finder FXPreferredViewStyle -string "clmv"  # Use column view in all Finder windows by default (`icnv`, `clmv`, `Flwv`, `Nlsv`)
-    - chflags nohidden ~/Library  # Show the ~/Library folder
     - defaults write com.apple.DesktopViewSettings.IconViewSettings arrangeBy -string "name"  # Desktop
     - defaults write com.apple.DesktopViewSettings.IconViewSettings iconSize -int 64
     - defaults write com.apple.DesktopViewSettings.IconViewSettings gridSpacing -int 100
