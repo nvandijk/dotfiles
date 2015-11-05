@@ -1,11 +1,9 @@
 ---
 homebrew:
   taps:
-    - caskroom/cask
     - caskroom/versions
     - homebrew/services
   packages:
-    - cask
     - elasticsearch
     - gettext
     - git

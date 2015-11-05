@@ -8,6 +8,10 @@ xcode-select --install
 echo "Installing Homebrew ..."
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
+# Download and install homebrew cask
+echo "Installing Homebrew Cask ..."
+brew install caskroom/cask/brew-cask
+
 # Modify the PATH
 export PATH=/usr/local/bin:$PATH
 
