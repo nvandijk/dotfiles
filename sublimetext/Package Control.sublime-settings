@@ -1,5 +1,6 @@
 {
 	"auto_upgrade_last_run": null,
+	"bootstrapped": true,
 	"in_process_packages":
 	[
 	],
@@ -8,7 +9,6 @@
 		"Advanced CSV",
 		"Anaconda",
 		"Babel",
-		"CoffeeScript",
 		"Color Highlighter",
 		"Dictionaries",
 		"Djaneiro",
@@ -22,9 +22,7 @@
 		"Minifier",
 		"Package Control",
 		"Puppet",
-		"Puppet Syntax checking",
 		"Python Improved",
-		"Quick Look",
 		"requirementstxt",
 		"Sass",
 		"SCSS",
