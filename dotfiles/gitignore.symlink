@@ -3,6 +3,7 @@
 .coverage
 .DS_Store
 .sass-cache
+.scratches
 .vagrant
 *.db
 *.egg-info
@@ -12,4 +13,6 @@
 *.sql
 *.tar
 *.tox
+*.xls
+*.xlsx
 htmlcov/
