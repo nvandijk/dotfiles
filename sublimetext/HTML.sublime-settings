@@ -1,7 +1,7 @@
 {
 	"extensions":
 	[
-		"html",
-		"html"
+		"htm",
+		"html.erb"
 	]
 }
