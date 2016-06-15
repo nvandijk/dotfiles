@@ -16,3 +16,4 @@
 *.xls
 *.xlsx
 htmlcov/
+.cache/
