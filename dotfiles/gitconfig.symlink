@@ -21,6 +21,7 @@
     a = add
     apatch = add --patch
     f = fetch --all --prune
+    ftags = fetch --tags
     p = pull --ff-only
     m = merge --no-ff
     d = diff
