@@ -1,6 +1,7 @@
 ---
 - name: ensure osx defaults
   command: "{{ item }}"
+  become: true
   with_items:
     - scutil --set ComputerName "quebec"  # Set computer name (as done via System Preferences -> Sharing)
     - scutil --set HostName "quebec"

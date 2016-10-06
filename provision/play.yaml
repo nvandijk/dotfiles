@@ -14,7 +14,7 @@
 
   tasks:
   - name: Set MOTD
-    sudo: yes
+    become: true
     copy:
       src: files/motd
       dest: /etc/motd

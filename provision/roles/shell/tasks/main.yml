@@ -10,7 +10,7 @@
     dest: ~/.zsh-syntax-highlighting
 
 - name: ensure zsh is available
-  sudo: yes
+  become: true
   lineinfile:
     dest: /etc/shells
     line: /usr/local/bin/zsh
