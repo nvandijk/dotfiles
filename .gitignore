@@ -1,4 +1,5 @@
 scripts/*
+*.retry
 sublimetext/Package Control.last-run
 sublimetext/Side Bar.sublime-settings
 sublimetext/Package Control.cache
