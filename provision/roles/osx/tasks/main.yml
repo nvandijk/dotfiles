@@ -3,9 +3,9 @@
   command: "{{ item }}"
   become: true
   with_items:
-    - scutil --set ComputerName "quebec"  # Set computer name (as done via System Preferences -> Sharing)
-    - scutil --set HostName "quebec"
-    - scutil --set LocalHostName "quebec"
+    - scutil --set ComputerName "mbp-nvandijk"  # Set computer name (as done via System Preferences -> Sharing)
+    - scutil --set HostName "mbp-nvandijk"
+    - scutil --set LocalHostName "mbp-nvandijk"
     - chflags nohidden ~/Library  # Show the ~/Library folder
     - defaults write NSGlobalDomain NSWindowResizeTime -float 0.001  # Increase window resize speed for Cocoa applications
     - defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true  # Expand save panel by default
